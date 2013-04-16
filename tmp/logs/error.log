@@ -235,3 +235,43 @@
 #9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #10 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2013-04-16 13:54:15 Error: [MissingControllerException] Controller class Cakephp-cakephp-0cad237Controller could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-16 13:54:19 Error: [MissingControllerException] Controller class Cakephp-cakephp-0cad237Controller could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-16 13:55:49 Error: [MissingControllerException] Controller class Cakephp-cakephp-0cad237Controller could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-16 13:58:47 Error: [BadRequestException] The request has been black-holed
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Component\SecurityComponent.php(227): SecurityComponent->blackHole(Object(ContactController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(ContactController))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(100): Controller->startupProcess()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(ContactController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-16 13:58:56 Error: [BadRequestException] The request has been black-holed
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Component\SecurityComponent.php(227): SecurityComponent->blackHole(Object(ContactController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(ContactController))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(100): Controller->startupProcess()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(ContactController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-16 14:01:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-16 14:01:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-16 14:06:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
