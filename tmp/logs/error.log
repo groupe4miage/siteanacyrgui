@@ -1,0 +1,237 @@
+2013-04-10 09:18:49 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-10 11:35:59 Error: [MissingControllerException] Controller class SinController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-10 11:36:02 Error: [MissingControllerException] Controller class SignupController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-10 11:36:21 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 11:46:35 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 11:46:37 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 11:46:37 Error: [MissingControllerException] Controller class SignupController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-10 11:46:38 Error: [MissingControllerException] Controller class SinController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-10 14:41:55 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:41:58 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:52:24 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:52:39 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:52:42 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:52:47 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:52:56 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:53:06 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:53:06 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:13 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:13 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:33 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:33 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:34 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-10 14:54:37 Error: [MissingActionException] Action UsersController::singup() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-12 08:22:29 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-12 12:14:10 Error: [SocketException] Could not send email.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(972): MailTransport->send(Object(CakeEmail))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\Controller\UsersController.php(24): CakeEmail->send()
+#2 [internal function]: UsersController->signup()
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-04-12 13:29:58 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-12 13:34:18 Error: [SocketException] Invalid email: "site@localhost"
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(508): CakeEmail->_setEmail('_from', Array, NULL)
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(324): CakeEmail->_setEmailSingle('_from', Array, NULL, 'From requires o...')
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(1054): CakeEmail->from(Array)
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(945): CakeEmail->_applyConfig('smtp')
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(305): CakeEmail->config('smtp')
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\Controller\UsersController.php(28): CakeEmail->__construct('smtp')
+#6 [internal function]: UsersController->signup()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-12 13:34:52 Error: [SocketException] Invalid email: "site@localhost"
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(508): CakeEmail->_setEmail('_from', Array, NULL)
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(324): CakeEmail->_setEmailSingle('_from', Array, NULL, 'From requires o...')
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(1054): CakeEmail->from(Array)
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(945): CakeEmail->_applyConfig('smtp')
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(305): CakeEmail->config('smtp')
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\Controller\UsersController.php(28): CakeEmail->__construct('smtp')
+#6 [internal function]: UsersController->signup()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-12 13:36:42 Error: [SocketException] Invalid email: "site@localhost"
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(508): CakeEmail->_setEmail('_from', Array, NULL)
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(324): CakeEmail->_setEmailSingle('_from', Array, NULL, 'From requires o...')
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(1054): CakeEmail->from(Array)
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(945): CakeEmail->_applyConfig('smtp')
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Network\Email\CakeEmail.php(305): CakeEmail->config('smtp')
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\Controller\UsersController.php(27): CakeEmail->__construct('smtp')
+#6 [internal function]: UsersController->signup()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-12 13:52:35 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-12 13:53:23 Error: [MissingControllerException] Controller class UserController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-12 13:54:44 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-12 14:02:27 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-13 09:22:09 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\View\View.php(850): HelperCollection->load('Javascript', Array)
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\View\View.php(456): View->loadHelpers()
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-04-13 09:26:21 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 07:47:14 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 07:47:46 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 08:38:28 Error: [MissingActionException] Action UsersController::index() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 09:48:54 Error: [MissingActionException] Action UsersController::password() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-15 09:54:24 Error: [MissingActionException] Action UsersController::password() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-16 08:19:31 Error: [MissingActionException] Action UsersController::activate() could not be found.
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-16 08:45:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Model\Model.php(2653): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\Controller\UsersController.php(42): Model->find('first', Array)
+#6 [internal function]: UsersController->activate('50-668aa56196f7...')
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

@@ -65,12 +65,12 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'bdd_site',
+		'database' => 'test',
 		'prefix' => '',
-		'encoding' => 'utf8',
+		//'encoding' => 'utf8',
 	);
 
-	/*public $test = array(
+	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -79,6 +79,5 @@ class DATABASE_CONFIG {
 		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
-	);*/		
-
+	);
 }
