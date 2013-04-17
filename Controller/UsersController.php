@@ -17,8 +17,8 @@ function signup(){
                            
                             
                             App::uses('CakeEmail','Network/Email');
-                            $email = new CakeEmail('smtp');
-                            $email->from('thibaud.michel64@gmail.com')
+                            $email = new CakeEmail('gmail');
+                            $email->from('cyril.lespinasse@gmail')
                                 ->to($d['User']['mail'])
                                  ->subject('Test :: Inscription')   
                                  ->emailFormat('html') 
