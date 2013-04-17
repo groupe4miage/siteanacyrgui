@@ -425,3 +425,49 @@
 2013-04-17 07:15:58 Error: [MissingControllerException] Controller class DisplayController could not be found.
 #0 C:\wamp\www\cakephp\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-04-17 07:50:34 Error: [BadRequestException] The request has been black-holed
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Component\SecurityComponent.php(227): SecurityComponent->blackHole(Object(NewsLetterController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(NewsLetterController))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(100): Controller->startupProcess()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(NewsLetterController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-17 09:02:50 Error: [BadRequestException] The request has been black-holed
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Component\SecurityComponent.php(227): SecurityComponent->blackHole(Object(NewsLetterController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(NewsLetterController))
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Utility\ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(100): Controller->startupProcess()
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(NewsLetterController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-17 12:27:39 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: Hôte inconnu. 
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\SmtpTransport.php(95): CakeSocket->connect()
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\SmtpTransport.php(60): SmtpTransport->_connect()
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\CakeEmail.php(972): SmtpTransport->send(Object(CakeEmail))
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\Model\NewsLetter.php(32): CakeEmail->send()
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\Controller\NewsLetterController.php(10): NewsLetter->send(Array)
+#5 [internal function]: NewsLetterController->index()
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NewsLetterController), Array)
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(NewsLetterController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-17 12:28:10 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: Hôte inconnu. 
+#0 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\SmtpTransport.php(95): CakeSocket->connect()
+#1 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\SmtpTransport.php(60): SmtpTransport->_connect()
+#2 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Network\Email\CakeEmail.php(972): SmtpTransport->send(Object(CakeEmail))
+#3 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\Model\NewsLetter.php(32): CakeEmail->send()
+#4 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\Controller\NewsLetterController.php(10): NewsLetter->send(Array)
+#5 [internal function]: NewsLetterController->index()
+#6 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NewsLetterController), Array)
+#7 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(NewsLetterController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
