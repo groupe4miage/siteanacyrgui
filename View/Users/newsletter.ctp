@@ -1,4 +1,3 @@
-
 <?php echo $this->Form->create('NewsLetter');?>
 
 <?php echo $this->Form->input('titre',array('label'=>'Votre titre :',"required"));?>
