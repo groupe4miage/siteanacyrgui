@@ -39,6 +39,7 @@
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Accueil",array('controller'=>'')); ?></li>
                 <li style="float: left; margin-left: 50px;">Qui sommes nous ?</li>
                 <li style="float: left; margin-left: 50px;">Atelier</li>
+                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Le conseil de Claudine",array('controller'=>'posts/index_users')); ?></li>
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
             </ul>
              <div class="logo"> <?php echo $this->Html->image('logoBlanc.png', array('alt' => 'panier'));?></div>
@@ -52,7 +53,7 @@
                 <div id="menu_verticale" class="navigationgauche">  
               
                      <ul>
-                        Bijoux Femme <br>
+                         <?php echo $this->Html->link("Bijoux femme",array('controller'=>'products/index')); ?><br>
                             <br>
                         Bijoux Homme <br>
                             <br>

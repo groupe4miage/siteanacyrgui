@@ -22,7 +22,7 @@ class PostsController extends AppController {
         if ($this->request->is('post')) {
             if ($this->Post->save($this->request->data)) {
                 $this->Session->setFlash('Votre post a été sauvegardé.');
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('action' => 'index_admin'));
             } else {
                 $this->Session->setFlash('Impossible d\'ajouter votre post.');
             }
@@ -35,7 +35,7 @@ class PostsController extends AppController {
     } else {
         if ($this->Post->save($this->request->data)) {
             $this->Session->setFlash('Votre post a été mis à jour.');
-            $this->redirect(array('action' => 'index'));
+            $this->redirect(array('action' => 'index_admin'));
         } else {
             $this->Session->setFlash('Impossible de mettre à jour votre post.');
             }
@@ -47,7 +47,7 @@ class PostsController extends AppController {
         }
         if ($this->Post->delete($id)) {
             $this->Session->setFlash('Le Post avec l\'id ' . $id . ' a été supprimé.');
-            $this->redirect(array('action' => 'index'));
+            $this->redirect(array('action' => 'index_admin'));
         }
     }
 }

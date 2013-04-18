@@ -1,5 +1,11 @@
 <?php
 class ProductsController extends AppController{
+     
+    //Ajout Laetita 18/04/13 affichage catalogue
+    function index() {
+        $this->set('posts', $this->Product->find('all'));
+    }
+    
     public function addArticle(){
       //Récupération de la liste des couleurs.
       $this->set('listecouleurs', $this->Product->Color->find('list'));
