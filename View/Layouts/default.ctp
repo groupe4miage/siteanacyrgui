@@ -31,6 +31,7 @@
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Accueil",array('controller'=>'')); ?></li>
                 <li style="float: left; margin-left: 50px;">Qui sommes nous ?</li>
                 <li style="float: left; margin-left: 50px;">Atelier</li>
+                <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Le conseil de Claudine",array('controller'=>'posts/index_users')); ?></li>
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
             </ul>
         </div>
