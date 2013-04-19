@@ -8,33 +8,39 @@
         <?php foreach ($posts as $post): ?>
 
             <td>
+
     <table>
      
             <tr align="center">
                 <td >
                 <?php
-                if ($post['Product']['photo'] == '') {
-                    echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
-                   
-                } else {
-                    echo $post['Product']['photo'];
-                }
-                $i++;
-                ?>
-                </td>
-            </tr>
-            <tr align="center">
-                <td >
-               <?php 
-               echo $post['Product']['name'];
-                ?>
+                if (($post['Product']['category_id'] == 2))
+                    {
+                    if ($post['Product']['photo'] == '') {
+                        echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
+
+                    } else {
+                        echo $this->Html->image('noPhototmp.png', array('alt' => 'noPhototmp'));
+                        //echo $post['Product']['photo'];
+                    }
                 
-               <?php 
-               echo $post['Product']['unitprice'];
-               echo "€";
-               echo "    ";
-               echo $this->Html->image('panier.png', array('alt' => 'panier'));
+                    $i++;
+                
                 ?>
+                    </td>
+                 </tr>
+            <tr align="center">
+                    <td >
+                   <?php 
+                   echo $post['Product']['name'];
+                    ?>
+
+                   <?php 
+                   echo $post['Product']['unitprice'];
+                   echo "€";
+                   echo "    ";
+                   echo $this->Html->image('panier.png', array('alt' => 'panier'));
+                    } ?>
                 </td>
             </tr>
         
