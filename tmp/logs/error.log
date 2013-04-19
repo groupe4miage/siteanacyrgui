@@ -471,3 +471,59 @@
 #8 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(NewsLetterController), Object(CakeRequest), Object(CakeResponse))
 #9 C:\wamp\www\cakephp-cakephp-2.1.1-0-g43cf2f0\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2013-04-19 07:19:05 Error: [MissingConnectionException] Database connection "SQLSTATE[42000] [1049] Unknown database 'bdd_site'" is missing, or could not be created.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\Datasource\DboSource.php(245): Mysql->connect()
+#1 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\Model.php(3372): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\Model.php(3398): Model->setSource('posts')
+#5 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Model\Model.php(2653): Model->getDataSource()
+#6 C:\wamp\www\cakephp-cakephp-0cad237\app\Controller\PostsController.php(13): Model->find('all')
+#7 [internal function]: PostsController->index_users()
+#8 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\cakephp-cakephp-0cad237\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-04-19 09:23:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:23:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:23:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:24:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:24:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:25:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:25:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:26:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:31:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 09:31:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 12:49:05 Error: [MissingControllerException] Controller class DisplayController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 13:27:54 Error: [MissingControllerException] Controller class DisplayController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 13:28:22 Error: [MissingControllerException] Controller class DisplayController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-19 13:29:03 Error: [MissingControllerException] Controller class IndexUsersController could not be found.
+#0 C:\wamp\www\cakephp-cakephp-0cad237\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -72,16 +72,30 @@
                 
             </div>
           
-            <div id="corps" style="margin-left: 150px; min-height: 150px;">
+            <div class='centre'>
                 <?php echo $this->Session->flash(); ?>
                 <?php echo $this->fetch('content'); ?>
-            </div>
+                <div class="papillon"><?php echo $this->Html->image('papillon.png')?> </div>
+            </div
         </div>
-        <footer>
-            <ul style="list-style: none; margin-left: 500px;">
-                <li style="float: left; margin-left: 50px;">mention l&eacute;gales</li>
-                <li style="float: left; margin-left: 50px;">Condition d'utilisation</li>
-            </ul>
+        <footer class="bas">
+            <div class="gauche_footer">
+                <div class="title_footer">Mentions L&eacute;gales</div>
+                <div class="contenu_footer">contenu mentions légales</div>
+            </div>
+            <div class="centre_footer">
+                <div class="title_footer">Ouverture</div>
+                <div class="contenu_footer">Du mardi au samedi <br>
+                            9H30 à 19H </div>
+            </div>
+            <div class="droite_footer">  
+               <div class="title_footer">Contact </div>
+               <div class="contenu_footer"> 06 95 50 35 50<br>
+                    <br>
+                    7 rue saint simon<br>
+                    33390 Blaye<br>
+               </div>
+            </div>
         </footer>
 		<?php echo $this->element('sql_dump'); ?>
     </body>
