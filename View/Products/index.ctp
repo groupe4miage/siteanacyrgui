@@ -1,28 +1,26 @@
-
 <table>
-    <tr>
-        <th>Liste des produits</th>
+    <caption align="center"> Liste des produits</caption>
 
-    </tr>
-
+    <?php $i = 0; ?>
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
     les informations des posts -->
-
-    <?php foreach ($posts as $post): ?>
     <tr>
-        <td>
-            <?php echo $post['Product']['name']; ?>
-        </td>
-        <td>
-            <?php echo $post['Product']['name']; ?>
-        </td>
-        <td>
-            <?php echo $post['Product']['name']; ?>
-        </td>
-        <td>
-            <?php echo $post['Product']['name']; ?>
-        </td>
-  
+        <?php foreach ($posts as $post): ?>
+
+            <td>
+                <?php
+                echo $post['Product']['name'];
+                $i++;
+                ?>
+            </td>
+            <?php
+            if ($i == 4) {
+                ?>
+            </tr><tr> 
+                <?php
+                $i = 0;
+            }
+            ?>
+        <?php endforeach; ?>
     </tr>
-    <?php endforeach; ?>
 </table>
