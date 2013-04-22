@@ -27,7 +27,7 @@
          <div class="marge">
             <ul>
                 <li><?php echo $this->Html->link("Accueil",array('controller'=>'')); ?></li>
-                <li>Qui sommes nous ?</li>
+                <li><?php echo $this->Html->link("Qui sommes nous ?",array('quisommesnous')); ?></li>
                 <li>Atelier</li>
                  <li><?php echo $this->Html->link("Le conseil de Claudine",array('controller'=>'posts/index_users')); ?></li>
                 <li><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
