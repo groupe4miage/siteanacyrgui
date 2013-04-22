@@ -1,11 +1,12 @@
+
 <table>
     <caption align="center"> Liste des produits</caption>
-
+    <?php $this->Media->iframe('Product',$products['Product']['id']); ?>
     <?php $i = 0; ?>
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
     les informations des posts -->
     <tr>
-        <?php foreach ($posts as $post): ?>
+        <?php foreach ($products as $post): ?>
 
             <td>
 

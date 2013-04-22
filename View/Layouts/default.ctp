@@ -73,7 +73,7 @@
             </div>
           
             <div class='centre'>
-                <?php echo $this->Session->flash(); ?>
+                <?php //echo $this->Session->flash(); ?>
                 <?php echo $this->fetch('content'); ?>
                 <div class="papillon"><?php echo $this->Html->image('papillon.png')?> </div>
             </div
