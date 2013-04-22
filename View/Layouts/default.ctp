@@ -28,8 +28,7 @@
             <ul>
                 <li><?php echo $this->Html->link("Accueil",array('controller'=>'')); ?></li>
                 <li><?php echo $this->Html->link("Qui sommes nous ?",array('quisommesnous')); ?></li>
-                <li>Atelier</li>
-                 <li><?php echo $this->Html->link("Le conseil de Claudine",array('controller'=>'posts/index_users')); ?></li>
+                <li><?php echo $this->Html->link("Les actualités",array('controller'=>'posts/index_users')); ?></li>
                 <li><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
             </ul>
              <div class="logo"> <?php echo $this->Html->image('logoBlanc.png', array('alt' => 'panier'));?></div>
