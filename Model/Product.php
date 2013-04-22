@@ -1,9 +1,8 @@
 <?php
     class Product extends AppModel{
-        public $actsAs = array('Media.Media');
-        
+                
          public $validate = array(
-        'name' => array(
+        'id' => array(
               array(
                         'rule' => 'isUnique',					
                         'message' => 'Cet article existe deja'

@@ -34,7 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     
     public $components = array('Session','Cookie','Auth');
-    public $helpers = array('Html','Form','Media.Media');
+    
     function beforeFilter(){
         $this->Auth->allow();
         

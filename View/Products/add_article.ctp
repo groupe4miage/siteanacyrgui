@@ -6,4 +6,5 @@
 <?php echo $this->Form->input('color_id', array('label'=>'Couleur','options'=>$listecouleurs));?>
 <?php echo $this->Form->input('category_id', array('label'=>'Catégorie','options'=>$listecategories));?>
 <?php echo $this->Form->input('subcategory_id', array('label'=>'Sous catégorie','options'=>$listesouscategories));?>
-<?php echo $this->Form->end('Ajout'); ?>
+<?php echo $this->Form->create('photo', array('label'=>'photo','type' => 'file')); ?>
+<?php echo $this->Form->file('file');?><?php echo $this->Form->end('Ajout'); ?>
