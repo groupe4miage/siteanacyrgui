@@ -37,7 +37,7 @@
          <div class="marge" style=" height: 180px;">
             <ul style="list-style: none; margin-left: 100px;">
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Accueil",array('controller'=>'')); ?></li>
-                <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Qui sommes nous",array('quisommesnous ?')); ?></li>
+                <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Qui sommes nous ?",array('quisommesnous')); ?></li>
                 <li style="float: left; margin-left: 50px;">Atelier</li>
                  <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Le conseil de Claudine",array('controller'=>'posts/index_users')); ?></li>
                 <li style="float: left; margin-left: 50px;"><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
