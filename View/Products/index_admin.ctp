@@ -27,6 +27,7 @@ les informations des posts -->
         echo $this->Form->postLink(
               $this->Html->image('panier.png', array('alt' => ('panier'))),
                 array('escape' => false),
+                $url = null,
                 array('action' => 'delete', $post['Product']['id']),
                 array('confirm' => 'Etes-vous sûr ?'));
         //echo $this->Html->image('panier.png', array('alt' => 'panier'));
