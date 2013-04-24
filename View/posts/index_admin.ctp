@@ -1,9 +1,10 @@
-<h1>Blog posts</h1>
+<h1 class="blogconseil imageconseil">&nbsp Retrouver vos derniers articles...</h1>
 <table>
     <tr>
         <th>Id</th>
         <th>Titre</th>
         <th>Crée</th>
+        <th>Date</th>
     </tr>
 
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
