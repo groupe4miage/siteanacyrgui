@@ -6,6 +6,10 @@ class ProductsController extends AppController{
         $this->set('products', $this->Product->find('all'));
     }
     
+    function index_admin() {
+        $this->set('products', $this->Product->find('all'));
+    }
+    
     
     
     public function add_article(){
@@ -17,26 +21,7 @@ class ProductsController extends AppController{
       //Récupération de la liste des sous categories.
       $this->set('listesouscategories', $this->Product->Category->SubCategory->find('list'));
       
-      //******* On renomme l'image de manière aléatoire pour éviter un conflit dans le dossier (2 fois le même nom par exemple
-    $dir = 'img/';
-   // $ext = strtolower( pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION) );
-   // $file=uniqid().'.'.$ext;
-    $file='plaisir des yeux.png';
- 
- //**** on bouge l'image
-   
-
-    //move_uploaded_file($_FILES['picture']['tmp_name'], $dir);
-    //debug($_FILES['picture']['tmp_name']);
-      
-      //$ext = $_FILES['photo']['name'];
-      //debug($ext);
-      
-      //$ext = strtolower( pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION) );
-      //$file=uniqid().'.'.$ext; 
-      //debug($_FILES['file']['name']);
-
-      if ($this->request->is('post')) {
+     if ($this->request->is('post')) {
             if ($this->Product->save($this->request->data)) {
                 $this->Session->setFlash('Votre produit a été sauvegardé.');
                 $this->redirect(array('action' => 'add_article'));
@@ -46,5 +31,16 @@ class ProductsController extends AppController{
             }
         }
     }
+    
+        public function delete($id) {
+        if ($this->request->is('get')) {
+            throw new MethodNotAllowedException();
+        }
+        if ($this->Product->delete($id)) {
+            $this->Session->setFlash('Le produit avec l\'id ' . $id . ' a été supprimé.');
+            $this->redirect(array('action' => 'index_admin'));
+        }
+    }
+    
 }
 ?>
