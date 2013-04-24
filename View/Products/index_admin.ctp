@@ -19,8 +19,6 @@ les informations des posts -->
         }
 
         echo $post['Product']['name'];
-
-
         echo $post['Product']['unitprice'];
         echo "€";
         echo "    ";
@@ -28,7 +26,7 @@ les informations des posts -->
               $this->Html->image('delete.png'),
                 array('action' => 'delete', $post['Product']['id']),
                  array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
-               
+         
         //echo $this->Html->image('panier.png', array('alt' => 'panier'));
         // array('confirm' => 'Etes-vous sûr ?'));
     }
