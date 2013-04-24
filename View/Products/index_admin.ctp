@@ -25,12 +25,12 @@ les informations des posts -->
         echo "€";
         echo "    ";
         echo $this->Form->postLink(
-              $this->Html->image('panier.png', array('alt' => ('panier'))),
-                array('escape' => false),
-                $url = null,
+              $this->Html->image('delete.png'),
                 array('action' => 'delete', $post['Product']['id']),
-                array('confirm' => 'Etes-vous sûr ?'));
+                 array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
+               
         //echo $this->Html->image('panier.png', array('alt' => 'panier'));
+        // array('confirm' => 'Etes-vous sûr ?'));
     }
 endforeach;
 ?>
