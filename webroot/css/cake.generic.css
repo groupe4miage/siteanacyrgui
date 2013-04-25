@@ -168,7 +168,14 @@ h1{
  
 table tr:nth-child(2n+1){
     background-color: #DDA0DD;
+  
 }
+
+.tableau{
+    margin-left: 170px;
+    padding-bottom: 250px;
+}
+
 .profil {
      
     color:#BA55D3;
@@ -221,7 +228,7 @@ table tr:nth-child(2n+1){
     background-color:#FFF3F3;
  }
  
- #UserSignupForm, #UserLoginForm, #UserPasswordForm, #NewsLetterNewsletterForm{
+ #UserSignupForm, #UserLoginForm, #UserPasswordForm, #NewsLetterNewsletterForm, #PostAddForm{
       border: 2px solid #BA55D3;
       padding: 20px;
       height: 140px;
@@ -236,8 +243,8 @@ table tr:nth-child(2n+1){
       margin-bottom: 10px;
  }
 
- #UserLoginForm input[type="submit"],#UserPasswordForm input[type="submit"]{
-     margin-right: 35%;
+ #UserLoginForm input[type="submit"],#UserPasswordForm input[type="submit"]{    
+ margin-right: 35%;
      margin-top : 10px;
  }
  
@@ -249,27 +256,41 @@ table tr:nth-child(2n+1){
     height: 60px;     
  }
  
- #NewsLetterNewsletterForm {
+ #NewsLetterNewsletterForm, #PostAddForm {
      height: 220px;
      width: 700px;
  }
  
- #NewsLetterNewsletterForm input{
+ #NewsLetterNewsletterForm input, #PostAddForm input{
      margin-left: 20px;
      margin-bottom: 10px;
  }
  
- #NewsLetterNewsletterForm  textarea{
+ #NewsLetterNewsletterForm  textarea, #PostAddForm textarea{
      float: right;
      width: 600px;
      resize: none;
      margin-bottom: 10px;
  }
  
- #NewsLetterNewsletterForm input[type="submit"]{
+ #NewsLetterNewsletterForm input[type="submit"], #PostAddForm input[type="submit"]{
      margin-left: 35%;
  }
  
  .newsletter{
       padding-left: 180px;
+ }
+ 
+ .tableau_ajout{
+      margin-top: 10px;
+ }
+ 
+ .tableau_ajout td{
+     width: 200px;
+     
+ }
+ .tableau_ajout td a{
+ text-decoration: none;
+ color : black;
+     
  }
