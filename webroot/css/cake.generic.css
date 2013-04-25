@@ -159,11 +159,16 @@ h1{
      border: 2px solid #DDA0DD;
      border-radius: 10px;
  }
+
  .titre_bulle{
      border: 2px solid #DDA0DD;
      background-color: #FAF0E6;
      font-weight:bold;
      font-size: 20px;
+ }
+
+ .date_bulle{
+     float: right;
  }
  
 table tr:nth-child(2n+1){
