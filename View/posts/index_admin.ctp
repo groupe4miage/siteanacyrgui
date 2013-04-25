@@ -1,5 +1,14 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+?>
 <h1 class="blogconseil imageconseil">&nbsp Retrouver vos derniers articles...</h1>
-<table>
+<div class="tableau">
+<table class="tableau_ajout">
+    
     <tr>
         <th>Id</th>
         <th>Titre</th>
@@ -18,11 +27,12 @@
         </td>
         <td>
             <?php echo $this->Form->postLink(
-                'Delete',
+                'Supprimer',
                 array('action' => 'delete', $post['Post']['id']),
+                    
                 array('confirm' => 'Etes-vous sûr ?'));
             ?>
-            <?php echo $this->Html->link('Edit', array('action' => 'edit', $post['Post']['id'])); ?>
+            <?php echo $this->Html->link('Modifier', array('action' => 'Edit', $post['Post']['id'])); ?>
         </td>
         <td>
             <?php echo $post['Post']['created']; ?>
@@ -31,6 +41,9 @@
     </tr>
     <?php endforeach; ?>
      <tr>
-            <?php echo $this->Html->link('Ajouter un post', array('controller' => 'posts', 'action' => 'add')); ?>
+           
+     <?php echo $this->Html->link($this->Html->image("add.png", array("alt" => "Ajouter un post")),array('controller' => 'posts', 'action' => 'add'),array('escape'=>FALSE)); ?>
+         </br>
      </tr>
 </table>
+</div>
