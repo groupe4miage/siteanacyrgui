@@ -28,8 +28,8 @@
         </header>
          <div class="marge">
             <ul>
-                <li><?php echo $this->Html->link("Accueil",array('home')); ?></li>
-                <li><?php echo $this->Html->link("Qui sommes nous ?",array('quisommesnous')); ?></li>
+                <li><?php echo $this->Html->link("Accueil",array('controller'=>'pages/home')); ?></li>
+                <li><?php echo $this->Html->link("Qui sommes nous ?",array('controller'=>'pages/quisommesnous')); ?></li>
                 <li><?php echo $this->Html->link("Les actualités",array('controller'=>'posts/index_users')); ?></li>
                 <li><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
             </ul>
@@ -39,7 +39,7 @@
         <div>
             <div class="navigationcategorie">
                 <ul>
-                    <b>Catégorie</b>
+                    <b>Catégories</b>
                 </ul>
                 <div id="menu_verticale" class="navigationgauche">  
                     <ul>

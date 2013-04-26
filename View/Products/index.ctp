@@ -1,9 +1,3 @@
-
-
-
-<!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
-les informations des posts -->
-
 <?php foreach ($products as $post): ?>
     <?php
     if (($post['Product']['category_id'] == 2)) {
