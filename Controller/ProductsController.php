@@ -2,9 +2,10 @@
 
 class ProductsController extends AppController {
 
-    //Ajout Laetita 18/04/13 affichage catalogue
+      
     function index() {
         $this->set('products', $this->Product->find('all'));
+        
     }
 
     function index_admin() {
@@ -41,10 +42,11 @@ class ProductsController extends AppController {
                 ));
                 $idd = $idd-1;
                 
-                $dir = WWW_ROOT . 'img/';
+                $dir = WWW_ROOT . 'img';
+                $this->Session->setFlash($dir);
                 $files = new File('C:/Users/Sonia/Desktop/testsite/' . $images[$idd]['Product']['picture']);
-                $this->Session->setFlash($files->name);
-                $files->copy($dir->path.DS.$files->name);
+                //$this->Session->setFlash($files->name);
+                $files->copy($dir, $overwrite = true);
                 //copy('img/'.$image, 'C:\Users\Sonia\Desktop\testsite'.$image);    
                 //$this->Session->setFlash($this->post('picture'));
                 //$this->Session->setFlash('Votre produit a été sauvegardé.');

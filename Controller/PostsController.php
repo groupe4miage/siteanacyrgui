@@ -1,21 +1,33 @@
 <?php
 
 class PostsController extends AppController {
-    public $helpers = array('Html', 'Form');
+    public $helpers = array('Html', 'Form','Paginator');
     public $components = array('Session');
+    var $paginate =
+              array(
+              'limit' => 4,
+              'order' => array(
+              'Post.created' => 'desc'
+                )
+              );  
     
     
     function index_admin() {
         $this->set('posts', $this->Post->find('all'));
+        $data=$this->paginate('Post.created');
+        $this->set('data',$data);
     }
     
     function index_users() {
         $this->set('posts', $this->Post->find('all'));
+        $data=$this->paginate('Post.created');
+        $this->set('data',$data);
     }
     
     public function view($id) {
         $this->Post->id = $id;
         $this->set('post', $this->Post->read());
+        
     }
     
      public function add() {

@@ -19,7 +19,7 @@
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
     les informations des posts -->
 
-    <?php foreach ($posts as $post): ?>
+    <?php foreach ($data as $post): ?>
     <tr>
         <td><?php echo $post['Post']['id']; ?></td>
         <td>
@@ -46,4 +46,16 @@
          </br>
      </tr>
 </table>
+
+
+<?php
+// Montre les numéros de page
+echo $this->Paginator->numbers();
+
+// Montre les liens précédent et suivant
+echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
+echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
+
+?>
+
 </div>
