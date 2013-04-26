@@ -336,3 +336,34 @@ table tr:nth-child(2n+1){
  .ajoutArticle{
      padding-top: 0;
  }
+
+ .affichagephoto{
+     padding-left: 25%;
+     padding-top: 10px;
+ }
+ 
+ .affichagetexte{
+     color:#BA55D3;
+     margin-left: 35%;
+ }
+ 
+ .table{
+     width: 100%;
+     padding-top: 100px;
+ }
+  
+ .tr{
+     width: 100%;
+     float: left;
+     margin-top: -150px;
+    margin-bottom: 150px;
+ }
+ 
+ .td{
+    border: 2px solid #BA55D3;
+    float: left;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 23%;
+ }
