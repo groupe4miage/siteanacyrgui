@@ -9,7 +9,7 @@ Class UsersController extends AppController {
                 $d['User']['password'] = Security::hash($d['User']['password'],null,true);
             }                   
 
-            if($this->User->save($d,true,array('username','password','mail'))){
+            if($this->User->save($d,true,array('username','password','mail','newsletter'))){
                 $link = array('controller'=>'users','action'=>'activate',$this->User->id.'-'.md5($d['User']['password']));
                 App::uses('CakeEmail','Network/Email');
                 $email = new CakeEmail('gmail');
@@ -120,4 +120,24 @@ Class UsersController extends AppController {
         }   
     }
     
+    
+    public function edit(){
+        $user_id = $this->Auth->user('id');
+        if(!$user_id){
+            $this->redirect('/');
+            die();
+        }
+        
+        $this->User->id = $user_id;
+        if( $this->request->is('post')){
+           $d = $this->request->data;
+           $d['User']['id']= $user_id;
+         
+            $this->User->save($d,true,array('newsletter'),array('conditions'=>array('id'=>$d['User']['id'])));
+            $this->Session->setFlash("enregistrement","ok");
+           
+       }
+       
+        
+    }
 }	

@@ -8,6 +8,8 @@
     </br>
 <?php echo $this->Form->input('password' ,array('label'=>"Mot de passe :")); ?>
     </br>
+    <?php echo $this->Form->input('newsletter', array('type' => 'checkbox','label'=>'S abonner à la newsletter' )); ?>
+    </br>
 <?php echo $this->Form->end("S'enregister"); ?>
 
 </div>

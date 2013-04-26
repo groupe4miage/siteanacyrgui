@@ -18,6 +18,7 @@
                 <ul>
                 <?php if(AuthComponent::user('id')): ?> 
                     <?php echo $this->Html->link("Se deconnecter",array('action'=>'logout','controller'=>'users')); ?>
+                    <?php echo $this->Html->link("Mon compte",array('action'=>'edit','controller'=>'users')); ?>
                 <?php else: ?>
                     <?php echo $this->Html->link("Se connecter",array('action'=>'login','controller'=>'users')); ?>
                     <?php echo $this->Html->link("S'inscrire",array('action'=>'signup','controller'=>'users')); ?>
