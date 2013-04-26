@@ -21,12 +21,37 @@ class ProductsController extends AppController {
         $this->set('listesouscategories', $this->Product->Category->SubCategory->find('list'));
 
         if ($this->request->is('post')) {
-            if ($this->Product->save($this->request->data)) {
-                $this->Session->setFlash('Votre produit a été sauvegardé.');
+            
+            
+           // if ($this->Product->save($this->request->data)) {
+                
+                $this->Product->save($this->request->data);
+                $id = $this->Product->find('all', array(
+                'fields' => array('Product.id'),
+                'order'=> array('Product.id'=>'desc')
+                ));
+                
+                $idd = $this->Product->find('count');
+                
+                //$this->Session->setFlash($idd);
+                
+                $images = $this->Product->find('all', array(
+                'fields' => array('Product.picture'),
+                'condition' => array('Product.id' => $idd)
+                ));
+                
+                
+                $dir = WWW_ROOT . 'img/';
+                $files = new File('C:/Users/Sonia/Desktop/testsite/' . $images[$idd]['Product']['picture']);
+                $this->Session->setFlash($files->name);
+                $files->copy($dir->path.DS.$files->name);
+                //copy('img/'.$image, 'C:\Users\Sonia\Desktop\testsite'.$image);    
+                //$this->Session->setFlash($this->post('picture'));
+                //$this->Session->setFlash('Votre produit a été sauvegardé.');
                 $this->redirect(array('action' => 'add_article'));
-            } else {
-                $this->Session->setFlash('Impossible d\'ajouter ce produit.');
-            }
+           // } else {
+             //   $this->Session->setFlash('Impossible d\'ajouter ce produit.');
+            //}
         }
     }
 
