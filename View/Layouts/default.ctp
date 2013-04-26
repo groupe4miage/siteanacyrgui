@@ -7,6 +7,7 @@
             echo $this->fetch('meta');
             echo $this->fetch('css');
             echo $this->fetch('script');
+            echo $this->Html->script('jquery-2.0.0.min.js');
        ?>
         <meta http-equiv="Content-Type" content="test/html; charset=utf-8"/>
         <title><?php echo $title_for_layout; ?></title>
