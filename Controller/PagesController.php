@@ -79,4 +79,20 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
 	}
+        function beforeFilter() {
+           parent::beforeFilter();
+           $this->loadModel('Post');
+           //$idd = $this->Post->getLastInsertID();
+           
+           $idd = $this->Post->find('count');
+           $idd = $idd-1;
+          
+           $texte = $this->Post->find('all', array(
+            'fields' => array('Post.body'),
+            'condition' => array('Post.id' => $idd)
+           ));
+          $post=$texte[$idd]['Post']['body'];
+           $this->set('post',$post );
+          // $this->Session->setFlash('Corps du post : ' . $texte[$idd]['Post']['body']);
+       }
 }

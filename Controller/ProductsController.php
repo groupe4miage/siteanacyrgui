@@ -39,7 +39,7 @@ class ProductsController extends AppController {
                 'fields' => array('Product.picture'),
                 'condition' => array('Product.id' => $idd)
                 ));
-                
+                $idd = $idd-1;
                 
                 $dir = WWW_ROOT . 'img/';
                 $files = new File('C:/Users/Sonia/Desktop/testsite/' . $images[$idd]['Product']['picture']);
