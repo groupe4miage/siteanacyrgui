@@ -1,4 +1,6 @@
 <?php $this->set('title_for_layout','Accueil'); ?>
 
-<?php echo $post;?>
+<?php echo $title;?>
+
+<?php echo $body;?>
 

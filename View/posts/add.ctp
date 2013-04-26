@@ -2,8 +2,8 @@
     <div class="connexion">
 <?php
 echo $this->Form->create('Post');
-echo $this->Form->input('Votre titre:');
-echo $this->Form->input('Votre message:', array('rows' => '3'));
+echo $this->Form->input('title',array('label'=>'Votre titre :',"required"));
+echo $this->Form->input('body',array('label'=>'Votre message :',"required"));
 echo $this->Form->end('Sauvegarder');
 ?>
     </div>

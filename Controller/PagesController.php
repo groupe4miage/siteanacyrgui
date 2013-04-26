@@ -91,8 +91,15 @@ class PagesController extends AppController {
             'fields' => array('Post.body'),
             'condition' => array('Post.id' => $idd)
            ));
-          $post=$texte[$idd]['Post']['body'];
-           $this->set('post',$post );
-          // $this->Session->setFlash('Corps du post : ' . $texte[$idd]['Post']['body']);
+           $titre = $this->Post->find('all', array(
+            'fields' => array('Post.title'),
+            'condition' => array('Post.id' => $idd)
+           ));           
+          $body=$texte[$idd]['Post']['body'];
+          $title=$titre[$idd]['Post']['title'];
+          
+           $this->set('body',$body );
+           $this->set('title',$title );
+          
        }
 }
