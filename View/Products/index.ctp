@@ -7,16 +7,16 @@ les informations des posts -->
                 echo '<div class="tr">';
              }else if($cpt % 4 == 0){
                   echo "</div>";
-                  if($cpt<sizeof($products)){
+                  if($cpt<=sizeof($products)){
                       echo '<div class="tr">';
                   }
               }
               if($cpt == sizeof($products)){
-                      echo '</div>';
+                 echo '</div>';
               }
           ?>
         <div class="td">
-            <div class="affichagephoto" >
+            <div class="affichagephoto">
                 <?php 
                 if ($products[$cpt]['Product']['picture'] == '') {
                     echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
@@ -27,13 +27,14 @@ les informations des posts -->
                  ?>
             </div>
             <div class="affichagetexte">
-                <?php echo $products[$cpt]['Product']['name']; ?>
-                <?php
-                echo $products[$cpt]['Product']['unitprice'];
-                echo "€";
-                echo "    ";
+                <?php 
+                    echo $products[$cpt]['Product']['name'];
+                    echo $products[$cpt]['Product']['unitprice'];
+                    echo "€";
+                    echo "    ";
                 ?>
             </div>
         </div>
     <?php } ?> 
-</div>   
+</div>
+</div>

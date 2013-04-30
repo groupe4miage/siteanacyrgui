@@ -3,9 +3,19 @@
 class ProductsController extends AppController {
 
       
-    function index() {
-        $this->set('products', $this->Product->find('all'));
-        
+    function index($categorie,$sousCategorie) {
+        $this->loadModel('Category');
+        $idCategory = $this->Category->find('all',
+            array('conditions'=>  array('Category.name'=>$categorie)
+         ));
+        $this->loadModel('SubCategory');
+        $idSubCategory = $this->SubCategory->find('all',
+            array('conditions'=>  array('SubCategory.name'=>$sousCategorie)
+         ));
+        $listeProduits = $this->Product->find('all',array(
+            'conditions'=>array('Product.category_id'=>$idCategory[0]['Category']['id'],'Product.sub_category_id'=>$idSubCategory[0]['SubCategory']['id'])
+        ));
+        $this->set('products', $listeProduits);
     }
 
     function index_admin() {

@@ -2,11 +2,13 @@ html{
      width: 100%;
     margin: auto;
 }
+
 body{
     width: 100%;
     margin:auto;
     margin-top: -15px;
 }
+
 #corps{
     margin: auto;
     background-color:#FFFFFF;
@@ -18,7 +20,9 @@ body{
 .centre {
     margin-top: 8%;
     min-height: 620px;
+    min-width: 100%;
     margin-left: 200px;
+    position: relative;
  }
  
 h1{
@@ -51,6 +55,7 @@ h1{
 .marge ul li{
     float: left;
     margin-left: 4%;
+    cursor: pointer;
 }
 
 .navigationgauche ul{
@@ -59,6 +64,11 @@ h1{
     border-right: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
+    list-style: none;
+}
+
+.navigationgauche ul li{
+     cursor: pointer;
 }
 
 .navigationgauche {
@@ -74,13 +84,44 @@ h1{
 .navigationcategorie{
   width: 200px;
   list-style: none;
-  margin: 0;
+  margin-top: 9%;
   padding: 0;
   font-family: georgia;
   font-size: 25px;
   font-style: inherit;  
   min-height: 150px; 
   float: left;
+}
+
+.navigationcategorie b{
+    padding-left: 15px;
+}
+
+.sous_categorie{
+    float: left;
+    display: none; 
+    margin-top: 12%;
+    font-family: georgia;
+    font-size: 20px;   
+    height: 300px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px dashed #ccc;
+    position: relative;
+    margin-left: 0px;
+    z-index: 9999;
+}
+
+.hover_categorie{
+     border: 1px dashed #ccc;
+     border-left: 0px;
+     border-right: 0px;
+     border-top: 0px;
+}
+
+.sous_categorie ul{
+    padding-right: 30px;
+    list-style: none;
 }
 
 .bas{
@@ -155,12 +196,6 @@ h1{
     height: 40px;
  }
  
- .livreor{ 
-    background-image:url(../img/livreOr.png);
-    background-repeat:no-repeat;
-    height: 128px;
- }
- 
  .bulle{
      border: 2px solid #DDA0DD;
      border-radius: 10px;
@@ -179,7 +214,6 @@ h1{
  
 table tr:nth-child(2n+1){
     background-color: #DDA0DD;
-  
 }
 
 .tableau{
@@ -187,8 +221,7 @@ table tr:nth-child(2n+1){
     padding-bottom: 250px;
 }
 
-.profil {
-     
+.profil {  
     color:#BA55D3;
     font-size: 30px;
     padding-left: 40px
@@ -202,9 +235,7 @@ table tr:nth-child(2n+1){
     padding-top: 100px;
     margin-top: 40px;
     margin-left:50px;
-   
  }
-
 
 .bande{
     background-image:url(../img/bande.png);
@@ -220,8 +251,7 @@ table tr:nth-child(2n+1){
   color:#BA55D3;
   font-weight:bold;
   font-style: italic;
-  text-align:justify;    
-    
+  text-align:justify;     
 }
 .connexion{
     color:#BA55D3;
@@ -300,16 +330,15 @@ table tr:nth-child(2n+1){
      width: 200px;
      
  }
+ 
  .tableau_ajout td a{
  text-decoration: none;
  color : black;
      
  }
+ 
  .textephoto {
-     
      color: #BA55D3;
-    
-     
  }
  
  #ProductAddArticleForm {
@@ -320,9 +349,9 @@ table tr:nth-child(2n+1){
  }
  
  #ProductAddArticleForm textarea {
-       resize: none;
-       margin-bottom: 110px;
-       float: right;    
+    resize: none;
+    margin-bottom: 110px;
+    float: right;    
  }
  
  #ProductAddArticleForm select{
