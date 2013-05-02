@@ -31,7 +31,11 @@
                 <li><?php echo $this->Html->link("Accueil",array('controller'=>'pages/home')); ?></li>
                 <li><?php echo $this->Html->link("Qui sommes nous ?",array('controller'=>'pages/quisommesnous')); ?></li>
                 <li><?php echo $this->Html->link("Les actualités",array('controller'=>'posts/index_users')); ?></li>
-                <li><?php echo $this->Html->link("Livre d'or",array('controller'=>'visitorsbooks/index_noninscrit')); ?></li>
+                <?php if(AuthComponent::user('id')): ?> 
+                <li><?php echo $this->Html->link("Livre d'or",array('controller'=>'visitorsbooks/index_inscrit')); ?></li>
+                <?php else : ?>
+                  <li><?php echo $this->Html->link("Livre d'or",array('controller'=>'visitorsbooks/index_noninscrit')); ?></li>
+                  <?php  endif; ?> 
                 <li><?php echo $this->Html->link("Contact",array('controller'=>'contact')); ?></li>
             </ul>
              <div class="logo"> <?php echo $this->Html->image('logoBlanc.png', array('alt' => 'panier'));?></div>

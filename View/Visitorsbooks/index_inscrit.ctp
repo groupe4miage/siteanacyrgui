@@ -5,7 +5,6 @@
 les informations des posts -->
 
 
-
 Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
 <br>
 <br>
