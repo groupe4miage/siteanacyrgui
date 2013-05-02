@@ -7,14 +7,15 @@ les informations des posts -->
 
 
 Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
-
+<br>
+<br>
 
 
 <?php foreach ($data as $post): ?>
     <div class="bulle"> 
         <div>
             <div class="titre_bulle">
-                <?php echo $post['VisitorsBook']['message']; ?>
+                <?php echo $post['VisitorsBook']['body']; ?>
                 <div class="date_bulle"> 
                     <?php echo $post['VisitorsBook']['created']; ?>
                 </div>

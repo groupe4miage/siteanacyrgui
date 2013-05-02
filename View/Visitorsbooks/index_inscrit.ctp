@@ -7,14 +7,14 @@ les informations des posts -->
 
 
 Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
-
-
+<br>
+<br>
 
 <?php foreach ($data as $post): ?>
     <div class="bulle"> 
         <div>
             <div class="titre_bulle">
-                <?php echo $post['VisitorsBook']['message']; ?>
+                <?php echo $post['VisitorsBook']['body']; ?>
                 <div class="date_bulle"> 
                     <?php echo $post['VisitorsBook']['created']; ?>
                 </div>
@@ -27,14 +27,9 @@ Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
 
     <div class="connexion">
 <?php
-echo $this->Form->create('Visitorsbooks');
-echo $this->Form->input('message',array('label'=>'Votre message :',"required"));
-
-echo $this->Form->postLink(
-             $this->Html->image('delete.png'),
-               array('action' => 'index_inscrit'),
-                array('escape' => false));
-echo $this->Form->end();
+echo $this->Form->create('VisitorsBook');
+echo $this->Form->input('body',array('label'=>'Votre message :',"required"));
+echo $this->Form->end('Ajouter');
 ?>
     </div>
  

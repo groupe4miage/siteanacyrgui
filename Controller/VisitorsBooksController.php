@@ -20,8 +20,8 @@ class VisitorsBooksController extends AppController {
     
     function index_inscrit() {
         $this->set('visitorsbooks', $this->VisitorsBook->find('all'));
-        $data=$this->paginate('VisitorsBook.created');
-        $this->set('data',$data);
+        
+   
         if ($this->request->is('post')) {
             if ($this->VisitorsBook->save($this->request->data)) {
                 $this->Session->setFlash('Votre commentaire a été sauvegardé.');
@@ -30,6 +30,9 @@ class VisitorsBooksController extends AppController {
                 $this->Session->setFlash('Impossible d\'ajouter votre commentaire.');
             }
         }
+        
+        $data=$this->paginate('VisitorsBook.created');
+        $this->set('data',$data);
     }
     
     function index_noninscrit() {
@@ -44,17 +47,6 @@ class VisitorsBooksController extends AppController {
         
     }
     
-     public function add() {
-         debug('coucou');
-        if ($this->request->is('post')) {
-            if ($this->VisitorsBook->save($this->request->data)) {
-                $this->Session->setFlash('Votre commentaire a été sauvegardé.');
-                $this->redirect(array('action' => 'index_inscrit'));
-            } else {
-                $this->Session->setFlash('Impossible d\'ajouter votre commentaire.');
-            }
-        }
-    }
     
     public function delete($id) {
         if ($this->request->is('get')) {
@@ -62,7 +54,7 @@ class VisitorsBooksController extends AppController {
         }
         if ($this->VisitorsBook->delete($id)) {
             $this->Session->setFlash('Le Post avec l\'id ' . $id . ' a été supprimé.');
-            $this->redirect(array('action' => 'index_inscrit'));
+            $this->redirect(array('action' => 'index_admin'));
         }
     }
 }
