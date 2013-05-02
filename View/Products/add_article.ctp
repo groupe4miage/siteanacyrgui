@@ -9,7 +9,7 @@
     </br>
     <?php echo $this->Form->input('category_id', array('label'=>'Catégorie: ','options'=>$listecategories));?>
     </br>
-    <?php echo $this->Form->input('subcategory_id', array('label'=>'Sous catégorie: ','options'=>$listesouscategories));?>
+    <?php echo $this->Form->input('sub_category_id', array('label'=>'Sous catégorie: ','options'=>$listesouscategories));?>
     </br>
     <?php echo $this->Form->input('picture', array('label'=>'Photo: ','type' => 'file')); ?>
     </br>

@@ -1,5 +1,6 @@
 <?php
-    class Category extends AppModel{
-        public $hasMany = array('Product');
-    }
+   class Category extends AppModel{
+       public $hasMany = array('Product');
+        
+   }
 ?>
