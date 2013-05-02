@@ -1,8 +1,14 @@
 <?php
 
 class ProductsController extends AppController {
+    public $helpers = array('Paginator');
+    public $components = array('Session');
+    var $paginate =
+            array(
+        'limit' => 4,
+        'order' => array('Products.id'=>'asc')
+        );
 
-      
     function index($categorie,$sousCategorie) {
         $this->loadModel('Category');
         $idCategory = $this->Category->find('all',
@@ -16,6 +22,9 @@ class ProductsController extends AppController {
             'conditions'=>array('Product.category_id'=>$idCategory[0]['Category']['id'],'Product.sub_category_id'=>$idSubCategory[0]['SubCategory']['id'])
         ));
         $this->set('products', $listeProduits);
+        
+        $data=$this->paginate('Products.id');
+        $this->set('data',$data);
     }
 
     function index_admin() {
