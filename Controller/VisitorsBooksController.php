@@ -12,13 +12,20 @@ class VisitorsBooksController extends AppController {
               );  
     
     function index_admin() {
+        if(AuthComponent::user('flag')=='1'){
         $this->set('Visitorsbooks', $this->VisitorsBook->find('all'));
         $data=$this->paginate('VisitorsBook.created');
         $this->set('data',$data);
+        
+        } else{
+                   $this->redirect('/');
+       }
     }
     
     
     function index_inscrit() {
+        
+       if(AuthComponent::user('id')){
         $this->set('visitorsbooks', $this->VisitorsBook->find('all'));
         
    
@@ -33,15 +40,19 @@ class VisitorsBooksController extends AppController {
         
         $data=$this->paginate('VisitorsBook.created');
         $this->set('data',$data);
+        
+       } else{
+                   $this->redirect('/');
+       }
+              
+        
+        
     }
     
     function index_noninscrit() {
-       
-         
         $this->set('visitorsbooks', $this->VisitorsBook->find('all'));
         $data=$this->paginate('VisitorsBook.created');
         $this->set('data',$data);
-         
     }
     
     public function view($id) {
@@ -52,6 +63,8 @@ class VisitorsBooksController extends AppController {
     
     
     public function delete($id) {
+        
+        if(AuthComponent::user('flag')=='1'){
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
@@ -59,6 +72,9 @@ class VisitorsBooksController extends AppController {
             $this->Session->setFlash('Le Post avec l\'id ' . $id . ' a été supprimé.');
             $this->redirect(array('action' => 'index_admin'));
         }
+    }else{
+         $this->redirect('/');
     }
+}
 }
 ?>

@@ -1,4 +1,4 @@
-
+                  
 <h1 class="blogconseil livreor">&nbsp;Livre d'or</h1>
 
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
@@ -42,3 +42,11 @@ echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'd
 echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
 
 ?>
+
+
+
+
+
+
+
+

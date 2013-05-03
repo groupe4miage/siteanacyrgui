@@ -1,3 +1,4 @@
+
 <div class="connexion ajoutArticle">
     <h2 class="profil">Ajout d'un article</h2>
     <?php echo $this->Form->create('Product'); ?>
