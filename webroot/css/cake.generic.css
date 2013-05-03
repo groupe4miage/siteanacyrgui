@@ -414,3 +414,27 @@ table tr:nth-child(2n+1){
     margin-left: 10px;
     width: 23%;
  }
+ 
+ .livreor{ 
+     position: center;
+    background-image:url(../img/livreOr.jpg);
+    background-repeat:no-repeat;
+    height: 800px;
+   margin-left: 10%;
+  font-weight:bold;
+   padding-left: 12%;
+     
+ }
+ 
+ .titrelivre{
+
+    padding-left: 10%;
+      font-family: kunstler Script;
+      font-size: 50px;
+ }
+ .livreortitre{
+     font-family: kunstler Script;
+     color:#A98DB6;
+    font-size: 100px;
+    padding-left: 12%;
+ }

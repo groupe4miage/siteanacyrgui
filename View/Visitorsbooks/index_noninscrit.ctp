@@ -1,22 +1,21 @@
-<div class =" livreor">
-<h1 class="blogconseil ">&nbsp;Livre d'or</h1>
+<div  class ="titrelivre ">
+Vous souhaitez donner votre avis sur la boutique de Claudine ? 
+<br>Connectez vous !
+
+</div>
+<div  class =" livreor">
+<h1 class="livreortitre">&nbsp;Livre d'or</h1>
 
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
 les informations des posts -->
 
 
-
-Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
-<br>
-<br>
-
-
 <?php foreach ($data as $post): ?>
-    <div class="bulle"> 
+    <div class=""> 
         <div>
-            <div class="titre_bulle ">
-                <?php echo $post['VisitorsBook']['body']; ?>
-                <div class="date_bulle"> 
+            <div class=" ">
+                <?php echo nl2br($post['VisitorsBook']['body']); ?>
+                <div class=""> 
                     <?php echo $post['VisitorsBook']['created']; ?>
                 </div>
             </div> 
