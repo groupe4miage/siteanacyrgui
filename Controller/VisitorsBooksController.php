@@ -36,9 +36,12 @@ class VisitorsBooksController extends AppController {
     }
     
     function index_noninscrit() {
+       
+         
         $this->set('visitorsbooks', $this->VisitorsBook->find('all'));
         $data=$this->paginate('VisitorsBook.created');
         $this->set('data',$data);
+         
     }
     
     public function view($id) {
