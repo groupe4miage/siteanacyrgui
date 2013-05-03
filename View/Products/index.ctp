@@ -1,9 +1,7 @@
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
 les informations des posts -->
 <div class="table">
-  <?php echo sizeof($data);
-  echo $data[0]['Product']['id'];
-  echo $data[1]['Product']['id'];?>
+
     <?php for($cpt = 0;$cpt<sizeof($data);$cpt++){ ?>
         <?php
             if($cpt == 0){
@@ -42,11 +40,10 @@ les informations des posts -->
     <?php
 // Montre les numéros de page
 echo $this->Paginator->numbers();
-
+//$this->Paginator->options(array('url' => $this->passedArgs));
 // Montre les liens précédent et suivant
 echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
 echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
 
 ?>
-</div>
 </div>
