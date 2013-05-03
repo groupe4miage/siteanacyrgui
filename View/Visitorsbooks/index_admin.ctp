@@ -1,4 +1,4 @@
-<h1 class="blogconseil livreor">&nbsp;Livre d'or</h1>
+<h1 class="blogconseil ">&nbsp;Livre d'or</h1>
 
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
 les informations des posts -->
