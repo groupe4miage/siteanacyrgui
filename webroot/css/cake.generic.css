@@ -1,14 +1,36 @@
-html{
-     width: 100%;
-    margin: auto;
+header{
+    background-image:url(../img/header.png);
+    background-repeat:no-repeat;
+    height: 400px;
 }
 
 body{
     width: 100%;
-    margin:auto;
-    margin-top: -15px;
+    margin: -2px;
 }
 
+.menu_verticale{
+   padding-top: 24%;
+   font-family: kunstler Script;
+   font-size: 48px;
+}
+
+.menu_verticale a{
+    color : black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu_verticale ul{
+    list-style: none;
+    margin-left: 8%;
+}
+
+.menu_verticale ul li{
+    float: left;
+    margin-left: 4%;
+    cursor: pointer;
+}
 #corps{
     margin: auto;
     background-color:#FFFFFF;
@@ -18,7 +40,6 @@ body{
 }
 
 .centre {
-    margin-top: 8%;
     min-height: 620px;
     min-width: 100%;
     margin-left: 200px;
@@ -29,33 +50,26 @@ h1{
     font-size:18px;      
 }
 
+.ecriture{
+   font-family: kunstler Script;
+   font-size: 48px;
+   color: black;
+}
+
+.horaire{
+    padding-left: 70%;
+}
+
+.telephone{
+    padding-top: 16%;
+    padding-left: 79%;
+}
 .panier{
     float : right;
     background-image:url(../img/sac.png);
     height: 500px;
     width: 400px;
     background-repeat:no-repeat;
-}
-
-.logo{
-    margin-left: 40%;
-    padding-top: 80px;
-}
-
-.marge{
-    background-image:url(../img/marge.png);
-    height: 180px;    
-}
-
-.marge ul{
-    list-style: none;
-    margin-left: 8%;
-}
-
-.marge ul li{
-    float: left;
-    margin-left: 4%;
-    cursor: pointer;
 }
 
 .navigationgauche ul{
@@ -84,7 +98,7 @@ h1{
 .navigationcategorie{
   width: 200px;
   list-style: none;
-  margin-top: 9%;
+  /*margin-top: 9%;*/
   padding: 0;
   font-family: georgia;
   font-size: 25px;
@@ -100,7 +114,7 @@ h1{
 .sous_categorie{
     float: left;
     display: none; 
-    margin-top: 12%;
+    margin-top: 3%;
     font-family: georgia;
     font-size: 20px;   
     height: 300px;
@@ -124,12 +138,10 @@ h1{
     list-style: none;
 }
 
-.bas{
+footer{
     background-image:url(../img/footer.png);
-    font-family: georgia;
-    font-size: 20px;
-    height: 190px;
-    padding-top: 20px;
+    height: 500px;
+    background-repeat:no-repeat;
 }
     
 .title_footer{
