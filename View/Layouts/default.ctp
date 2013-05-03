@@ -49,7 +49,7 @@
                     <li name="categorie_Homme">Homme</li><br>       
                     <li name="categorie_Femme">Femme</li><br>       
                     <li name="categorie_Enfant">Enfant</li><br>       
-                    <li name="categorie_Accessoires">Accessoires</li><br>       
+                    <li name="categorie_Cosmetique">Cosmétique</li><br>       
                     <li name="categorie_Piercing">Piercing</li><br> 
                </ul>
             </div> 
@@ -103,13 +103,13 @@
                array('escape' => false)); ?></li><br/>
             </ul>
          </div>
-        <div id="sous_categorie_accessoire" class="sous_categorie">
+        <div id="sous_categorie_cosmetique" class="sous_categorie">
             <ul>
-               <li><?php echo $this->Html->link("Vernis",array('controller'=>'Products','accessoire','vernis'),
+               <li><?php echo $this->Html->link("Vernis",array('controller'=>'Products','cosmetique','vernis'),
                array('escape' => false)); ?></li><br/>                
-                <li><?php echo $this->Html->link("Tatouages",array('controller'=>'Products','accessoire','tatouage'),
+                <li><?php echo $this->Html->link("Tatouages",array('controller'=>'Products','cosmetique','tatouage'),
                array('escape' => false)); ?></li><br/>               
-                <li><?php echo $this->Html->link("Faux Ongles",array('controller'=>'Products','accessoire','faux ongles'),
+                <li><?php echo $this->Html->link("Faux Ongles",array('controller'=>'Products','cosmetique','faux ongles'),
                array('escape' => false)); ?></li><br/>
             </ul>
          </div>
@@ -163,8 +163,8 @@
         $('li[name="categorie_Enfant"]').click(function(){
             gestionMenu('sous_categorie_enfant',this);
         });
-        $('li[name="categorie_Accessoires"]').click(function(){
-            gestionMenu('sous_categorie_accessoire',this);
+        $('li[name="categorie_Cosmetique"]').click(function(){
+            gestionMenu('sous_categorie_cosmetique',this);
         });
         $('li[name="categorie_Piercing"]').click(function(){
             gestionMenu('sous_categorie_piercing',this);
