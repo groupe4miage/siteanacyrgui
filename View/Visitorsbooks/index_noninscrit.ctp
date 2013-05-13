@@ -10,16 +10,22 @@
     les informations des posts -->
 
 
-    <?php foreach ($data as $post): ?>        
+     <?php foreach ($data as $post): ?>        
         <div style="margin-left: 74%"> 
             <?php echo $post['VisitorsBook']['created']; ?>
         </div>
         <?php echo $post['VisitorsBook']['body']; ?> 
-        <br>   _________________________
+        <br> 
+        <br> 
+        <div style="margin-left: 87%">
+        <?php echo $post['VisitorsBook']['username']; ?>
+         </div>
+        <br>
+        _________________________
         <br/>
     <?php endforeach; ?>
 </div>
-<div style="margin-left: 57%"> 
+<div style="margin-left: 15%"> 
 <?php
 // Montre les numéros de page
 echo $this->Paginator->numbers();

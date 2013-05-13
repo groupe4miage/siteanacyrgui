@@ -1,50 +1,54 @@
-                  
-<h1 class="blogconseil livreor">&nbsp;Livre d'or</h1>
-
-<!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
-les informations des posts -->
-
-
-Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez vous !
+<div  class ="titrelivre ">
+    Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez-vous !
+</div>
+<br> 
 <br>
-<br>
+<div  class =" livreor">
+    <div class="livreortitre">&nbsp;Livre d'or</div>
 
-<?php foreach ($data as $post): ?>
-    <div class="bulle"> 
-        <div>
-            <div class="titre_bulle">
-                <?php echo $post['VisitorsBook']['body']; ?>
-                <div class="date_bulle"> 
-                    <?php echo $post['VisitorsBook']['created']; ?>
-                </div>
-            </div> 
+    <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
+    les informations des posts -->
+
+
+    <?php foreach ($data as $post): ?>        
+        <div style="margin-left: 74%"> 
+            <?php echo $post['VisitorsBook']['created']; ?>
         </div>
-    </div>
-
-    <br/>
-<?php endforeach; ?>
-
-    <div class="connexion">
+        <?php echo $post['VisitorsBook']['body']; ?> 
+        <br> 
+        <br> 
+        <div style="margin-left: 87%">
+        <?php echo $post['VisitorsBook']['username']; ?>
+         </div>
+        <br>
+        _________________________
+        <br/>
+    <?php endforeach; ?>
+</div>
+<div style="margin-left: 15%"> 
 <?php
-echo $this->Form->create('VisitorsBook');
-echo $this->Form->input('body',array('label'=>'Votre message :',"required"));
-echo $this->Form->end('Ajouter');
-?>
-    </div>
- 
-<?php
-
 // Montre les numéros de page
 echo $this->Paginator->numbers();
-
 // Montre les liens précédent et suivant
 echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
 echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
-
 ?>
+</div>
 
+  
+    
+    
+    <div class="connexion">
+<?php
+echo $this->Form->create('VisitorsBook');
+echo $this->Form->input('body',array('label'=>'Votre message (limité à 360 caractères) :',"required"));
+echo $this->Form->input( 'username', array( 'value' => AuthComponent::user('username')  , 'type' => 'hidden') ); 
+echo $this->Form->end('Ajouter');
+?>
+    </div>    
 <script>
     $('#VisitorsBookBody').keyup(function(){
-       gestionNombreCaracteres(this, 250); 
+       gestionNombreCaracteres(this, 360); 
     });
 </script>
+
