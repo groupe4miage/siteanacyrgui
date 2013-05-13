@@ -1,27 +1,21 @@
 <div  class ="titrelivre ">
-    Vous souhaitez donner votre avis sur la boutique de Claudine ? 
-    <br>Connectez vous !
-
+    Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez-vous !
 </div>
+<br> 
+<br>
 <div  class =" livreor">
-    <h1 class="livreortitre">&nbsp;Livre d'or</h1>
+    <div class="livreortitre">&nbsp;Livre d'or</div>
 
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
     les informations des posts -->
 
 
-    <?php foreach ($data as $post): ?>
-        <div class=""> 
-            <div>
-                <div class=" ">
-                    <div style="margin-left: 45%"> 
+    <?php foreach ($data as $post): ?>        
+                    <div style="margin-left: 74%"> 
                         <?php echo $post['VisitorsBook']['created']; ?>
                     </div>
-                    <?php echo nl2br($post['VisitorsBook']['body']); ?> 
+                    <?php echo $post['VisitorsBook']['body']; ?> 
                     <br>   _________________________
-                </div> 
-            </div>
-        </div>
         <br/>
     <?php endforeach; ?>
 

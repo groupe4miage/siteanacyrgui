@@ -416,11 +416,12 @@ table tr:nth-child(2n+1){
 }
 
 .livreor{ 
-    position: center;
+   
     background-image:url(../img/livreOr.jpg);
     background-repeat:no-repeat;
     height: 800px;
     margin-left: 10%;
+    margin-right: 30%;
     font-family: cambria;
     font-style: italic;
     font-size: 17px;
@@ -430,13 +431,17 @@ table tr:nth-child(2n+1){
 
 .titrelivre{
 
-    padding-left: 10%;
-    font-family: lucida sans unicode;
+    padding-left: 14%;
+    font-family: cambria;
+    font-weight:bold;
+    font-style: italic;
+    color:#A98DB6;
     font-size: 20px;
 }
 .livreortitre{
     font-family: kunstler Script;
     color:#A98DB6;
+    font-weight:bold;
     font-size: 100px;
     padding-left: 12%;
 }
