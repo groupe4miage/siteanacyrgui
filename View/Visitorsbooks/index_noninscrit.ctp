@@ -11,20 +11,20 @@
 
 
     <?php foreach ($data as $post): ?>        
-                    <div style="margin-left: 74%"> 
-                        <?php echo $post['VisitorsBook']['created']; ?>
-                    </div>
-                    <?php echo $post['VisitorsBook']['body']; ?> 
-                    <br>   _________________________
+        <div style="margin-left: 74%"> 
+            <?php echo $post['VisitorsBook']['created']; ?>
+        </div>
+        <?php echo $post['VisitorsBook']['body']; ?> 
+        <br>   _________________________
         <br/>
     <?php endforeach; ?>
-
-    <?php
+</div>
+<div style="margin-left: 57%"> 
+<?php
 // Montre les numéros de page
-    echo $this->Paginator->numbers();
-
+echo $this->Paginator->numbers();
 // Montre les liens précédent et suivant
-    echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
-    echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
-    ?>
+echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
+echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
+?>
 </div>
