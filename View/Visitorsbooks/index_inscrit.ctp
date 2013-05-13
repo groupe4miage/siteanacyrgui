@@ -43,10 +43,8 @@ echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disable
 
 ?>
 
-
-
-
-
-
-
-
+<script>
+    $('#VisitorsBookBody').keyup(function(){
+       gestionNombreCaracteres(this, 250); 
+    });
+</script>

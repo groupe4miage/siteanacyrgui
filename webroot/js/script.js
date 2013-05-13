@@ -22,3 +22,10 @@ function disparitionMenu(){
     $('.sous_categorie').hide();
     $('li').removeClass("hover_categorie");
 };
+
+//fonction permettant de gérer le nombre de caractère d'une texteaera.
+function gestionNombreCaracteres(element,nombreCaractereMax){
+    if(element.value.length >= nombreCaractereMax){
+        element.value=element.value.substring(0,nombreCaractereMax);
+    }
+};
