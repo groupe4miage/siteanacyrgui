@@ -10,9 +10,9 @@ body{
 }
 
 .menu_verticale{
-   padding-top: 24%;
-   font-family: kunstler Script;
-   font-size: 48px;
+    padding-top: 24%;
+    font-family: kunstler Script;
+    font-size: 48px;
 }
 
 .menu_verticale a{
@@ -44,16 +44,16 @@ body{
     min-width: 100%;
     margin-left: 200px;
     position: relative;
- }
- 
+}
+
 h1{
     font-size:18px;      
 }
 
 .ecriture{
-   font-family: kunstler Script;
-   font-size: 48px;
-   color: black;
+    font-family: kunstler Script;
+    font-size: 48px;
+    color: black;
 }
 
 .horaire{
@@ -82,29 +82,29 @@ h1{
 }
 
 .navigationgauche ul li{
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .navigationgauche {
-  width: 200px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: georgia;
-  font-size: 20px;
-  font-style: italic;
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .navigationcategorie{
-  width: 200px;
-  list-style: none;
-  /*margin-top: 9%;*/
-  padding: 0;
-  font-family: georgia;
-  font-size: 25px;
-  font-style: inherit;  
-  min-height: 150px; 
-  float: left;
+    width: 200px;
+    list-style: none;
+    /*margin-top: 9%;*/
+    padding: 0;
+    font-family: georgia;
+    font-size: 25px;
+    font-style: inherit;  
+    min-height: 150px; 
+    float: left;
 }
 
 .navigationcategorie b{
@@ -127,10 +127,10 @@ h1{
 }
 
 .hover_categorie{
-     border: 1px dashed #ccc;
-     border-left: 0px;
-     border-right: 0px;
-     border-top: 0px;
+    border: 1px dashed #ccc;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
 }
 
 .sous_categorie ul{
@@ -143,28 +143,28 @@ footer{
     height: 500px;
     background-repeat:no-repeat;
 }
-    
+
 .title_footer{
-  padding-bottom: 30px;
-  color: white;
+    padding-bottom: 30px;
+    color: white;
 }
 
 .gauche_footer{
-   float:left; 
-   width: 15%;
-   padding-left: 20%;
+    float:left; 
+    width: 15%;
+    padding-left: 20%;
 }
 
 .centre_footer{
-   float: left; 
-   width: 15%;
-   padding-left: 10%;
+    float: left; 
+    width: 15%;
+    padding-left: 10%;
 }
 
 .droite_footer{
-   float: left; 
-   width: 15%;
-   padding-left: 10%;
+    float: left; 
+    width: 15%;
+    padding-left: 10%;
 }
 
 .papillon{
@@ -194,36 +194,36 @@ footer{
 }
 .formulaire input, textarea, select, option {
     background-color:#FFF3F3;
- }
- 
- .blogconseil {
+}
+
+.blogconseil {
     color:#BA55D3;
     font-size: 30px;
     padding-left: 40px;   
- }
- 
- .imageconseil{ 
+}
+
+.imageconseil{ 
     background-image:url(../img/conseil.png);
     background-repeat:no-repeat;
     height: 40px;
- }
- 
- .bulle{
-     border: 2px solid #DDA0DD;
-     border-radius: 10px;
- }
+}
 
- .titre_bulle{
-     border: 2px solid #DDA0DD;
-     background-color: #FAF0E6;
-     font-weight:bold;
-     font-size: 20px;
- }
+.bulle{
+    border: 2px solid #DDA0DD;
+    border-radius: 10px;
+}
 
- .date_bulle{
-     float: right;
- }
- 
+.titre_bulle{
+    border: 2px solid #DDA0DD;
+    background-color: #FAF0E6;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.date_bulle{
+    float: right;
+}
+
 table tr:nth-child(2n+1){
     background-color: #DDA0DD;
 }
@@ -237,7 +237,7 @@ table tr:nth-child(2n+1){
     color:#BA55D3;
     font-size: 30px;
     padding-left: 40px
-    
+
 }
 
 .profilimage{
@@ -247,7 +247,7 @@ table tr:nth-child(2n+1){
     padding-top: 100px;
     margin-top: 40px;
     margin-left:50px;
- }
+}
 
 .bande{
     background-image:url(../img/bande.png);
@@ -255,15 +255,15 @@ table tr:nth-child(2n+1){
     padding-bottom: 100px;
     margin-left: 30%;
     height: 35px;
- }
- 
+}
+
 .profiltext{
-  padding-left: 350px;
-  font-family: georgia;
-  color:#BA55D3;
-  font-weight:bold;
-  font-style: italic;
-  text-align:justify;     
+    padding-left: 350px;
+    font-family: georgia;
+    color:#BA55D3;
+    font-weight:bold;
+    font-style: italic;
+    text-align:justify;     
 }
 .connexion{
     color:#BA55D3;
@@ -275,166 +275,168 @@ table tr:nth-child(2n+1){
     padding-left: 300px;
     margin-bottom: 100px;
     padding-top: 8%;
- }
- 
+}
+
 .connexion input, textarea, select, option {
     background-color:#FFF3F3;
- }
- 
- #UserSignupForm, #UserLoginForm, #UserPasswordForm, #NewsLetterNewsletterForm, #PostAddForm{
-      border: 2px solid #BA55D3;
-      padding: 20px;
-      height: 140px;
- }
- 
- #UserSignupForm input[type="submit"]{
-     margin-right: 35%;
- }
- 
- #UserSignupForm input, #UserLoginForm input, #UserPasswordForm input, #ProductAddArticleForm input{
-      float: right;
-      margin-bottom: 10px;
- }
+}
 
- #UserLoginForm input[type="submit"],#UserPasswordForm input[type="submit"]{    
- margin-right: 35%;
-     margin-top : 10px;
- }
- 
- #UserLoginForm a {
-     color: #BA55D3;
- }
- 
- #UserPasswordForm {
+#UserSignupForm, #UserLoginForm, #UserPasswordForm, #NewsLetterNewsletterForm, #PostAddForm{
+    border: 2px solid #BA55D3;
+    padding: 20px;
+    height: 140px;
+}
+
+#UserSignupForm input[type="submit"]{
+    margin-right: 35%;
+}
+
+#UserSignupForm input, #UserLoginForm input, #UserPasswordForm input, #ProductAddArticleForm input{
+    float: right;
+    margin-bottom: 10px;
+}
+
+#UserLoginForm input[type="submit"],#UserPasswordForm input[type="submit"]{    
+    margin-right: 35%;
+    margin-top : 10px;
+}
+
+#UserLoginForm a {
+    color: #BA55D3;
+}
+
+#UserPasswordForm {
     height: 60px;     
- }
- 
- #NewsLetterNewsletterForm, #PostAddForm {
-     height: 220px;
-     width: 700px;
- }
- 
- #NewsLetterNewsletterForm input, #PostAddForm input{
-     margin-left: 20px;
-     margin-bottom: 10px;
- }
- 
- #NewsLetterNewsletterForm  textarea, #PostAddForm textarea{
-     float: right;
-     width: 600px;
-     resize: none;
-     margin-bottom: 10px;
- }
- 
- #NewsLetterNewsletterForm input[type="submit"], #PostAddForm input[type="submit"]{
-     margin-left: 35%;
- }
- 
- .newsletter{
-      padding-left: 180px;
- }
- 
- .tableau_ajout{
-      margin-top: 10px;
- }
- 
- .tableau_ajout td{
-     width: 200px;
-     
- }
- 
- .tableau_ajout td a{
- text-decoration: none;
- color : black;
-     
- }
- 
- .textephoto {
-     color: #BA55D3;
- }
- 
- #ProductAddArticleForm {
+}
+
+#NewsLetterNewsletterForm, #PostAddForm {
+    height: 220px;
+    width: 700px;
+}
+
+#NewsLetterNewsletterForm input, #PostAddForm input{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#NewsLetterNewsletterForm  textarea, #PostAddForm textarea{
+    float: right;
+    width: 600px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#NewsLetterNewsletterForm input[type="submit"], #PostAddForm input[type="submit"]{
+    margin-left: 35%;
+}
+
+.newsletter{
+    padding-left: 180px;
+}
+
+.tableau_ajout{
+    margin-top: 10px;
+}
+
+.tableau_ajout td{
+    width: 200px;
+
+}
+
+.tableau_ajout td a{
+    text-decoration: none;
+    color : black;
+
+}
+
+.textephoto {
+    color: #BA55D3;
+}
+
+#ProductAddArticleForm {
     border: 2px solid #BA55D3;
     height: 430px;
     padding: 20px;
     width: 390px;
- }
- 
- #ProductAddArticleForm textarea {
+}
+
+#ProductAddArticleForm textarea {
     resize: none;
     margin-bottom: 110px;
     float: right;    
- }
- 
- #ProductAddArticleForm select{
-     float: right;
-     margin-bottom: 10px;
- }
- 
- #ProductAddArticleForm input[type="file"]{
-     float: right;
-     margin-bottom: 10px;
- }
- 
- #ProductAddArticleForm input[type="submit"]{
-     margin-left: 60px;
- }
- 
- .ajoutArticle{
-     padding-top: 0;
- }
+}
 
- .affichagephoto{
-     padding-left: 25%;
-     padding-top: 10px;
- }
- 
- .affichagetexte{
-     color:#BA55D3;
-     margin-left: 35%;
- }
- 
- .table{
-     width: 100%;
-     padding-top: 100px;
- }
-  
- .tr{
-     width: 100%;
-     float: left;
-     margin-top: -150px;
+#ProductAddArticleForm select{
+    float: right;
+    margin-bottom: 10px;
+}
+
+#ProductAddArticleForm input[type="file"]{
+    float: right;
+    margin-bottom: 10px;
+}
+
+#ProductAddArticleForm input[type="submit"]{
+    margin-left: 60px;
+}
+
+.ajoutArticle{
+    padding-top: 0;
+}
+
+.affichagephoto{
+    padding-left: 25%;
+    padding-top: 10px;
+}
+
+.affichagetexte{
+    color:#BA55D3;
+    margin-left: 35%;
+}
+
+.table{
+    width: 100%;
+    padding-top: 100px;
+}
+
+.tr{
+    width: 100%;
+    float: left;
+    margin-top: -150px;
     margin-bottom: 150px;
- }
- 
- .td{
+}
+
+.td{
     border: 2px solid #BA55D3;
     float: left;
     height: 200px;
     margin-bottom: 10px;
     margin-left: 10px;
     width: 23%;
- }
- 
- .livreor{ 
-     position: center;
+}
+
+.livreor{ 
+    position: center;
     background-image:url(../img/livreOr.jpg);
     background-repeat:no-repeat;
     height: 800px;
-   margin-left: 10%;
-  font-weight:bold;
-   padding-left: 12%;
-     
- }
- 
- .titrelivre{
+    margin-left: 10%;
+    font-family: cambria;
+    font-style: italic;
+    font-size: 17px;
+    padding-left: 12%;
+
+}
+
+.titrelivre{
 
     padding-left: 10%;
-      font-family: kunstler Script;
-      font-size: 50px;
- }
- .livreortitre{
-     font-family: kunstler Script;
-     color:#A98DB6;
+    font-family: lucida sans unicode;
+    font-size: 20px;
+}
+.livreortitre{
+    font-family: kunstler Script;
+    color:#A98DB6;
     font-size: 100px;
     padding-left: 12%;
- }
+}
