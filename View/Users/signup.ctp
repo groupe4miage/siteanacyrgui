@@ -10,6 +10,9 @@
     </br>
     <?php echo $this->Form->input('newsletter', array('type' => 'checkbox','label'=>'S abonner à la newsletter' )); ?>
     </br>
+    En validant l'inscription vous validé les
+   <a href="<?php echo $this->webroot; ?>files/Modele_CGU.pdf">conditions générales du site</a>
+    </br>
 <?php echo $this->Form->end("S'enregister"); ?>
 
 </div>
