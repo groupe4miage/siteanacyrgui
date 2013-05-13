@@ -16,6 +16,8 @@
         <header> 
             <div class="ecriture telephone">06.95.50.35.50</div>
             <div class="ecriture horaire">Du mardi au vendredi de 9h30 à 19h</div>
+            
+
         </header>
 
         <div class="navigationcategorie">
@@ -120,6 +122,17 @@
                                                     <li><?php echo $this->Html->link("Contact", array('controller' => 'contact')); ?></li>
                                                 </ul>
                                             </div>
+                                                        <div class="panier">
+<ul>
+<?php if(AuthComponent::user('id')): ?> 
+<?php echo $this->Html->link("Se deconnecter",array('action'=>'logout','controller'=>'users')); ?>
+<?php echo $this->Html->link("Mon compte",array('action'=>'edit','controller'=>'users')); ?>
+<?php else: ?>
+<?php echo $this->Html->link("Se connecter",array('action'=>'login','controller'=>'users')); ?>
+<?php echo $this->Html->link("S'inscrire",array('action'=>'signup','controller'=>'users')); ?>
+<?php endif; ?> 
+</ul>
+</div>
                                         </footer>
                                         <?php echo $this->element('sql_dump'); ?>
                                         </body>
