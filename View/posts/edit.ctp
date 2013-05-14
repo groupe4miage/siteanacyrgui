@@ -1,7 +1,11 @@
-<h1>Editer le post</h1>
-<?php
-    echo $this->Form->create('Post', array('action' => 'edit'));
-    echo $this->Form->input('title');
-    echo $this->Form->input('body', array('rows' => '3'));
-    echo $this->Form->input('id', array('type' => 'hidden'));
-    echo $this->Form->end('Sauvegarder le post');
+<div class="connexion ajoutArticle">
+    <h1 class="blogconseil">Editer le post</h1>
+       <?php echo $this->Form->create('Post', array('action' => 'edit')); ?>
+      <?php  echo $this->Form->input('Titre: '); ?>
+<br>
+      <?php echo $this->Form->input('Description: ', array('rows' => '3')); ?>
+<br>
+       <?php echo $this->Form->input('id', array('type' => 'hidden')); ?>
+<br>
+       <?php echo $this->Form->end('Sauvegarder le post'); ?>
+</div>

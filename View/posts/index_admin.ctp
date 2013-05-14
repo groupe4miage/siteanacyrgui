@@ -5,15 +5,15 @@
  * and open the template in the editor.
  */
 ?>
-<h1 class="blogconseil imageconseil">&nbsp Retrouver vos derniers articles...</h1>
+<h1 class="blogconseil">&nbsp Retrouver vos derniers articles...</h1>
 <div class="tableau">
 <table class="tableau_ajout">
     
     <tr>
-        <th>Id</th>
+       
         <th>Titre</th>
-        <th>Crée</th>
-        <th>Date</th>
+        <th>Supprimer/Modifier</th>
+        
     </tr>
 
     <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
@@ -21,23 +21,24 @@
 
     <?php foreach ($data as $post): ?>
     <tr>
-        <td><?php echo $post['Post']['id']; ?></td>
+        
         <td>
             <?php echo $this->Html->link($post['Post']['title'], array('action' => 'view', $post['Post']['id'])); ?>
         </td>
-        <td>
-            <?php echo $this->Form->postLink(
-                'Supprimer',
+        <td>      
+             <?php echo $this->Form->postLink(
+               $this->Html->image('sup.png'),
                 array('action' => 'delete', $post['Post']['id']),
-                    
-                array('confirm' => 'Etes-vous sûr ?'));
+                 array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
             ?>
-            <?php echo $this->Html->link('Modifier', array('action' => 'Edit', $post['Post']['id'])); ?>
+             <?php echo $this->Html->Link(
+               $this->Html->image('edit.png'),
+                array('action' => 'edit', $post['Post']['id']),
+                array('escape' => false));
+            ?>
+            
+
         </td>
-        <td>
-            <?php echo $post['Post']['created']; ?>
-        </td>
-       
     </tr>
     <?php endforeach; ?>
      <tr>

@@ -1,4 +1,4 @@
-<h1 class="profil">Se connecter</h1>
+<h1 class="blogconseil">Se connecter</h1>
 <div class="connexion">
 <?php echo $this->Form->create('User'); ?>
 <?php echo $this->Form->input('username' ,array('label'=>"Login: ")); ?>

@@ -1,11 +1,11 @@
 <html>
  <head>
-  <h1 class="profil">Qui sommes nous ?</h1>
+  <h1 class="blogconseil">Qui sommes nous ?</h1>
   
   
  </head>
  <body> 
-    <div class="bande"></div> 
+
     <div class="profilimage">
        <div class="profiltext">
             <?php

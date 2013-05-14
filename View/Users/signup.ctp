@@ -1,4 +1,4 @@
-<h1 class="profil">Inscription</h1>
+<h1 class="blogconseil">Inscription</h1>
 
 <div class="connexion">
 <?php echo $this->Form->create('User'); ?>

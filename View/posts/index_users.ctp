@@ -1,5 +1,5 @@
 
-<div class="blogconseil imageconseil">&nbsp;Laissez-vous guider par Claudine ...</div>
+<div class="blogconseil">&nbsp;Laissez-vous guider par Claudine ...</div>
 <br>
 <br>
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
