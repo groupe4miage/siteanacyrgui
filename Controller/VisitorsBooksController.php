@@ -5,7 +5,7 @@ class VisitorsBooksController extends AppController {
     public $components = array('Session');
     var $paginate =
               array(
-              'limit' => 4,
+              'limit' => 3,
               'order' => array(
               'VisitorsBook.created' => 'desc'
                 )

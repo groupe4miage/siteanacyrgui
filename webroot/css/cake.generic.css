@@ -207,12 +207,13 @@ footer{
 }
 
  .blogconseil {
-    color:#BA55D3;
-    font-size: 30px;
-    padding-left: 40px; 
-    font-family: kunstler Script;
-    font-size: 50px;
- }
+ 
+   color:#A98DB6;
+   font-weight:bold;
+   font-size: 60px;
+   font-family: kunstler Script;
+   padding-left: 125px;  
+}
 
 .bulle{
     border: 2px solid #DDA0DD;
@@ -475,3 +476,18 @@ table tr:nth-child(2n+1){
     font-family: georgia;
     font-style: italic; 
  }
+ 
+ .boutonbulle{
+  float: right;  
+  width : 400px;
+}
+
+.test{
+    
+}
+
+.imageconseil{ 
+    background-image:url(../img/conseil.png);
+    background-repeat:no-repeat;
+    height: 90px;
+}
