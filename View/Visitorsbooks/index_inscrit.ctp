@@ -34,10 +34,7 @@ echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'd
 echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
 ?>
 </div>
-
-  
-    
-    
+   
     <div class="connexion">
 <?php
 echo $this->Form->create('VisitorsBook');
