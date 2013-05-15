@@ -16,10 +16,16 @@
         <header> 
             <div class="ecriture telephone">06.95.50.35.50</div>
             <div class="ecriture horaire">Du mardi au vendredi de 9h30 à 19h</div>
-            
+
 
         </header>
-
+        <?php
+        if (AuthComponent::user('flag') == 1):
+        $var = 'index_admin';
+        else:
+        $var = 'index';
+        endif;
+        ?>
         <div class="navigationcategorie">
             <b>Cat&eacute;gories</b>
             <div id="menu_verticale" class="navigationgauche">  
@@ -39,68 +45,68 @@
                                         </div>
                                         <div id="sous_categorie_homme" class="sous_categorie">
                                             <ul>  
-                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products', 'homme', 'collier'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products', 'homme', 'bracelet'), array('escape' => false));
-        ?></li><br/>               
-                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products', 'homme', 'bague'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products', 'homme', 'boucle'), array('escape' => false));
-        ?></li><br/>
-                                                <li><?php echo $this->Html->link("Montres", array('controller' => 'Products', 'homme', 'montre'), array('escape' => false));
-        ?></li><br/>
+                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products', 'action' => $var, 'homme', 'collier'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products','action' => $var, 'homme', 'bracelet'), array('escape' => false));
+                                                    ?></li><br/>               
+                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products','action' => $var, 'homme', 'bague'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products','action' => $var, 'homme', 'boucle'), array('escape' => false));
+                                                    ?></li><br/>
+                                                <li><?php echo $this->Html->link("Montres", array('controller' => 'Products','action' => $var, 'homme', 'montre'), array('escape' => false));
+                                                    ?></li><br/>
                                             </ul>
                                         </div>
                                         <div id="sous_categorie_femme" class="sous_categorie">
                                             <ul>
-                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products', 'femme', 'collier'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products', 'femme', 'bracelet'), array('escape' => false));
-        ?></li><br/>               
-                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products', 'femme', 'bague'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products', 'femme', 'boucle'), array('escape' => false));
-        ?></li><br/>
-                                                <li><?php echo $this->Html->link("Montres", array('controller' => 'Products', 'femme', 'montre'), array('escape' => false));
-        ?></li><br/>
-                                                <li><?php echo $this->Html->link("Parrures", array('controller' => 'Products', 'femme', 'parrue'), array('escape' => false));
-        ?></li><br/>
+                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products','action' => $var, 'femme', 'collier'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products','action' => $var, 'femme', 'bracelet'), array('escape' => false));
+                                                    ?></li><br/>               
+                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products','action' => $var, 'femme', 'bague'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products','action' => $var, 'femme', 'boucle'), array('escape' => false));
+                                                    ?></li><br/>
+                                                <li><?php echo $this->Html->link("Montres", array('controller' => 'Products','action' => $var, 'femme', 'montre'), array('escape' => false));
+                                                    ?></li><br/>
+                                                <li><?php echo $this->Html->link("Parrures", array('controller' => 'Products','action' => $var, 'femme', 'parrue'), array('escape' => false));
+                                                    ?></li><br/>
                                             </ul>
                                         </div>
                                         <div id="sous_categorie_enfant" class="sous_categorie">
                                             <ul>
-                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products', 'enfant', 'collier'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products', 'enfant', 'bracelet'), array('escape' => false));
-        ?></li><br/>               
-                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products', 'enfant', 'bague'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products', 'enfant', 'boucle'), array('escape' => false));
-        ?></li><br/>
+                                                <li><?php echo $this->Html->link("Colliers", array('controller' => 'Products','action' => $var, 'enfant', 'collier'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Bracelets", array('controller' => 'Products','action' => $var, 'enfant', 'bracelet'), array('escape' => false));
+                                                    ?></li><br/>               
+                                                <li><?php echo $this->Html->link("Bagues", array('controller' => 'Products','action' => $var, 'enfant', 'bague'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Boucles", array('controller' => 'Products','action' => $var, 'enfant', 'boucle'), array('escape' => false));
+                                                    ?></li><br/>
                                                 <li><?php echo $this->Html->link("Montres", array('controller' => 'Products', 'enfant', 'montre'), array('escape' => false));
-        ?></li><br/>
+                                                    ?></li><br/>
                                             </ul>
                                         </div>
                                         <div id="sous_categorie_accessoire" class="sous_categorie">
                                             <ul>
-                                                <li><?php echo $this->Html->link("Vernis", array('controller' => 'Products', 'accessoire', 'vernis'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Tatouages", array('controller' => 'Products', 'accessoire', 'tatouage'), array('escape' => false));
-        ?></li><br/>               
-                                                <li><?php echo $this->Html->link("Faux Ongles", array('controller' => 'Products', 'accessoire', 'faux ongles'), array('escape' => false));
-        ?></li><br/>
+                                                <li><?php echo $this->Html->link("Vernis", array('controller' => 'Products','action' => $var, 'accessoire', 'vernis'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Tatouages", array('controller' => 'Products','action' => $var, 'accessoire', 'tatouage'), array('escape' => false));
+                                                    ?></li><br/>               
+                                                <li><?php echo $this->Html->link("Faux Ongles", array('controller' => 'Products','action' => $var, 'accessoire', 'faux ongles'), array('escape' => false));
+                                                    ?></li><br/>
                                             </ul>
                                         </div>
                                         <div id="sous_categorie_piercing" class="sous_categorie">
                                             <ul>
-                                                <li><?php echo $this->Html->link("Langue", array('controller' => 'Products', 'piercing', 'langue'), array('escape' => false));
-        ?></li><br/>                
-                                                <li><?php echo $this->Html->link("Nombril", array('controller' => 'Products', 'piercing', 'nombril'), array('escape' => false));
-        ?></li><br/>
-                                                <li><?php echo $this->Html->link("Nez", array('controller' => 'Products', 'piercing', 'nez'), array('escape' => false));
-        ?></li><br/>
-                                                <li><?php echo $this->Html->link("Arcade", array('controller' => 'Products', 'piercing', 'arcade'), array('escape' => false));
-        ?></li><br/>
+                                                <li><?php echo $this->Html->link("Langue", array('controller' => 'Products','action' => $var, 'piercing', 'langue'), array('escape' => false));
+                                                    ?></li><br/>                
+                                                <li><?php echo $this->Html->link("Nombril", array('controller' => 'Products','action' => $var, 'piercing', 'nombril'), array('escape' => false));
+                                                    ?></li><br/>
+                                                <li><?php echo $this->Html->link("Nez", array('controller' => 'Products','action' => $var, 'piercing', 'nez'), array('escape' => false));
+                                                    ?></li><br/>
+                                                <li><?php echo $this->Html->link("Arcade", array('controller' => 'Products','action' => $var, 'piercing', 'arcade'), array('escape' => false));
+                                                    ?></li><br/>
                                             </ul>
                                         </div>
                                         <div class="centre">
@@ -113,26 +119,35 @@
                                             <div class="menu_verticale">
                                                 <ul>
                                                     <li><?php echo $this->Html->link("Qui sommes nous ?", array('controller' => 'pages/quisommesnous')); ?></li>
+
+                                                    <?php if (AuthComponent::user('flag') == 1): ?> 
+                                                    <li><?php echo $this->Html->link("Les actualités", array('controller' => 'posts/index_admin')); ?></li>
+                                                    <?php else: ?>
                                                     <li><?php echo $this->Html->link("Les actualités", array('controller' => 'posts/index_users')); ?></li>
-                                                    <?php if (AuthComponent::user('id')): ?> 
-                                                        <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_inscrit')); ?></li>
-                                                    <?php else : ?>
-                                                        <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_noninscrit')); ?></li>
+                                                    <?php endif; ?>
+                                                    <?php if (AuthComponent::user('id') && AuthComponent::user('flag') == 0): ?> 
+                                                    <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_inscrit')); ?></li>
+                                                    <?php elseif (AuthComponent::user('id') && AuthComponent::user('flag') == 1): ?>
+                                                    <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_admin')); ?></li>
+                                                    <?php else: ?>
+                                                    <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_noninscrit')); ?></li>
                                                     <?php endif; ?> 
                                                     <li><?php echo $this->Html->link("Contact", array('controller' => 'contact')); ?></li>
+
                                                 </ul>
                                             </div>
-                                                        <div class="panier">
-<ul>
-<?php if(AuthComponent::user('id')): ?> 
-<?php echo $this->Html->link("Se deconnecter",array('action'=>'logout','controller'=>'users')); ?>
-<?php echo $this->Html->link("Mon compte",array('action'=>'edit','controller'=>'users')); ?>
-<?php else: ?>
-<?php echo $this->Html->link("Se connecter",array('action'=>'login','controller'=>'users')); ?>
-<?php echo $this->Html->link("S'inscrire",array('action'=>'signup','controller'=>'users')); ?>
-<?php endif; ?> 
-</ul>
-</div>
+                                            <div class="panier">
+                                                <ul>
+                                                    <?php if (AuthComponent::user('id')): ?> 
+                                                    <?php echo $this->Html->link("Se deconnecter", array('action' => 'logout', 'controller' => 'users')); ?>
+                                                    <?php echo $this->Html->link("Mon compte", array('action' => 'edit', 'controller' => 'users')); ?>
+                                                    <?php else: ?>
+                                                    <?php echo $this->Html->link("Se connecter", array('action' => 'login', 'controller' => 'users')); ?>
+                                                    <?php echo $this->Html->link("S'inscrire", array('action' => 'signup', 'controller' => 'users')); ?>
+                                                    <?php endif; ?> 
+
+                                                </ul>
+                                            </div>
                                         </footer>
                                         <?php echo $this->element('sql_dump'); ?>
                                         </body>
