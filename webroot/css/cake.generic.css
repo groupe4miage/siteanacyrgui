@@ -1,3 +1,8 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 header{
     background-image:url(../img/header.png);
     background-size: 100%;
@@ -5,9 +10,13 @@ header{
     height: 350px;
 }
 
-html{
-    height: 100%;
-    width: 100%;
+footer{
+    background-image:url(../img/footer.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
+    clear: both;
+    position: relative;
 }
 
 body{
@@ -16,28 +25,30 @@ body{
     margin: -2px;
 }
 
-.menu_verticale{
-    padding-top: 24%;
-    font-family: kunstler Script;
-    font-size: 48px;
+.menu_footer{
+   padding-top: 15%;
+   font-family: kunstler Script;
+   font-size: 48px;
+   max-height: 100%;
 }
 
-.menu_verticale a{
+.menu_footer a{
     color : black;
     text-decoration:none;
     font-weight:bold;
 }
 
-.menu_verticale ul{
+.menu_footer ul{
     list-style: none;
-    margin-left: 8%;
+    margin-left: -3%;
 }
 
-.menu_verticale ul li{
+.menu_footer ul li{
     float: left;
     margin-left: 4%;
     cursor: pointer;
 }
+
 #corps{
     margin: auto;
     background-color:#FFFFFF;
@@ -48,10 +59,9 @@ body{
 
 .centre {
     min-height: 620px;
-    min-width: 100%;
     margin-left: 200px;
     position: relative;
-}
+ }
 
 h1{
     font-size:18px;      
@@ -59,23 +69,23 @@ h1{
 
 .ecriture{
     font-family: kunstler Script;
-    font-size: 48px;
-    color: black;
+    font-size: 60px;
+    color: white;
 }
 
 .horaire{
-    padding-left: 70%;
+    padding-left: 60%;
+    padding-top: 1%;
 }
 
 .telephone{
-    padding-top: 16%;
-    padding-left: 79%;
+    padding-left: 66%;
 }
 
 .panier{
-text-align: center;
-right: 1%;
-margin-left: 82%;
+    text-align: center;
+    right: 1%;
+    margin-left: 82%;
     font-weight: bold;   
     border-style: double;
     border-color: #A98DB6;
@@ -108,7 +118,6 @@ margin-left: 82%;
 .navigationcategorie{
     width: 200px;
     list-style: none;
-    /*margin-top: 9%;*/
     padding: 0;
     font-family: georgia;
     font-size: 25px;
@@ -148,42 +157,6 @@ margin-left: 82%;
     list-style: none;
 }
 
-footer{
-    background-image:url(../img/footer.png);
-    height: 500px;
-    background-repeat:no-repeat;
-}
-
-.title_footer{
-    padding-bottom: 30px;
-    color: white;
-}
-
-.gauche_footer{
-    float:left; 
-    width: 15%;
-    padding-left: 20%;
-}
-
-.centre_footer{
-    float: left; 
-    width: 15%;
-    padding-left: 10%;
-}
-
-.droite_footer{
-    float: left; 
-    width: 15%;
-    padding-left: 10%;
-}
-
-.papillon{
-    float: right;
-    width: 10%;
-    padding-right: 2%;
-    margin-top: -9%;
-}
-
 .map{
     padding:10px;
     width:425px;
@@ -211,7 +184,6 @@ footer{
 }
 
 .blogconseil {
-
     color:#A98DB6;
     font-weight:bold;
     font-size: 60px;
@@ -354,13 +326,11 @@ table tr:nth-child(2n+1){
 
 .tableau_ajout td{
     width: 200px;
-
 }
 
 .tableau_ajout td a{
     text-decoration: none;
     color : black;
-
 }
 
 .textephoto {
@@ -452,6 +422,7 @@ table tr:nth-child(2n+1){
     color:#A98DB6;
     font-size: 20px;
 }
+
 .livreortitre{
     font-family: kunstler Script;
     color:#A98DB6;
@@ -464,13 +435,12 @@ table tr:nth-child(2n+1){
     background-image:url(../img/cadre.png);
     background-repeat:no-repeat;
     height: 300px;
-    width: 50%;
     margin-left: 15%;
     margin-top: 2%;
 }
-.accueil_texte{
 
-    width: 70%;
+.accueil_texte{
+    width: 50%;
     color:#A98DB6;
     padding-top: 10%;
     padding-left: 10%;

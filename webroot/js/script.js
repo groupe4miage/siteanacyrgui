@@ -29,3 +29,20 @@ function gestionNombreCaracteres(element,nombreCaractereMax){
         element.value=element.value.substring(0,nombreCaractereMax);
     }
 };
+
+//fonction permettant de gérer la taille du footer et header selon les résolutions.
+function resolution(){
+   var largeur=screen.width;       
+    if(largeur==1280){
+        $('footer').css({'height': '300px'});
+        $('header').css({'height': '340px'});
+        $('.ecriture').css({'font-size':'48px'});
+        $('.menu_footer').css({'font-size':'36px'});
+    }else if(largeur==1024){
+        $('header').css({'height': '280px'});
+        $('.ecriture').css({'font-size':'39px'});
+        $('footer').css({'height': '240px'});
+        $('.menu_footer').css({'font-size':'36px'});
+        $('.menu_footer ul').css({'margin-left':'-7%'});
+    }
+};
