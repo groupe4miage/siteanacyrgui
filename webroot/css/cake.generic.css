@@ -1,7 +1,8 @@
 header{
     background-image:url(../img/header.png);
-    background-repeat:no-repeat;
-    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 html{
@@ -70,12 +71,15 @@ h1{
     padding-top: 16%;
     padding-left: 79%;
 }
+
 .panier{
-    float : right;
-    background-image:url(../img/sac.png);
-    height: 500px;
-    width: 400px;
-    background-repeat:no-repeat;
+text-align: center;
+right: 1%;
+margin-left: 82%;
+    font-weight: bold;   
+    border-style: double;
+    border-color: #A98DB6;
+    background-color:#EED4E9;
 }
 
 .navigationgauche ul{
@@ -206,13 +210,13 @@ footer{
     background-color:#FFF3F3;
 }
 
- .blogconseil {
- 
-   color:#A98DB6;
-   font-weight:bold;
-   font-size: 60px;
-   font-family: kunstler Script;
-   padding-left: 125px;  
+.blogconseil {
+
+    color:#A98DB6;
+    font-weight:bold;
+    font-size: 60px;
+    font-family: kunstler Script;
+    padding-left: 125px;  
 }
 
 .bulle{
@@ -229,12 +233,12 @@ footer{
     font-family: cambria;
     font-weight:bold;
     font-size: 20px;
-    
+
 }
 
 .date_bulle{
     float: right;
-   font-family: cambria;
+    font-family: cambria;
 }
 
 table tr:nth-child(2n+1){
@@ -281,15 +285,15 @@ table tr:nth-child(2n+1){
     padding-left: 300px; 
     margin-bottom: 200px;
     padding-top: 20px;
- }
+}
 
 .connexion input, textarea, select, option {
     background-color:#FFF3F3;
 }
 
 #UserSignupForm {
-     height: 170px;
- }
+    height: 170px;
+}
 
 #UserSignupForm, #UserLoginForm, #UserPasswordForm, #NewsLetterNewsletterForm, #PostAddForm{
     border: 2px solid #BA55D3;
@@ -426,7 +430,7 @@ table tr:nth-child(2n+1){
 }
 
 .livreor{ 
-   
+
     background-image:url(../img/livreOr.jpg);
     background-repeat:no-repeat;
     height: 600px;
@@ -457,15 +461,15 @@ table tr:nth-child(2n+1){
 }
 
 .accueil{
-     background-image:url(../img/cadre.png);
-      background-repeat:no-repeat;
-      height: 300px;
-      width: 50%;
-      margin-left: 15%;
-      margin-top: 2%;
- }
- .accueil_texte{
-     
+    background-image:url(../img/cadre.png);
+    background-repeat:no-repeat;
+    height: 300px;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.accueil_texte{
+
     width: 70%;
     color:#A98DB6;
     padding-top: 10%;
@@ -475,15 +479,15 @@ table tr:nth-child(2n+1){
     font-size: 20px;
     font-family: georgia;
     font-style: italic; 
- }
- 
- .boutonbulle{
-  float: right;  
-  width : 400px;
+}
+
+.boutonbulle{
+    float: right;  
+    width : 400px;
 }
 
 .test{
-    
+
 }
 
 .imageconseil{ 
