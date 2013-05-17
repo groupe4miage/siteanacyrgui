@@ -432,19 +432,18 @@ table tr:nth-child(2n+1){
 }
 
 .accueil{
-    background-image:url(../img/cadre.png);
+    background-image:url(../img/);
     background-repeat:no-repeat;
-    height: 300px;
+    height: 150px;
     margin-left: 15%;
     margin-top: 2%;
 }
 
 .accueil_texte{
-    width: 50%;
+    width: 70%;
     color:#A98DB6;
-    padding-top: 10%;
-    padding-left: 10%;
-    text-align:justify;
+    padding-top: 0%;
+    padding-left: 0%;
     font-weight:bold;
     font-size: 20px;
     font-family: georgia;
@@ -464,4 +463,38 @@ table tr:nth-child(2n+1){
     background-image:url(../img/conseil.png);
     background-repeat:no-repeat;
     height: 90px;
+}
+
+.Des_conseil{
+margin-left:20%;
+font-family: Georgia, Times, Serif;
+font-weight: bold;
+
+}
+.Title_conseil{
+   
+width:800px;
+background-color:#B35A5A;
+border-style: double;
+text-align: center;
+font-family: Georgia, Times, Serif;
+font-weight: bold;
+    
+}
+
+.Body_conseil{
+   
+text-align: center;
+    width:800px;
+  
+    border-style: double;
+    border-color: #A98DB6;
+    background-color:#EED4E9;
+
+
+
+
+ 
+    
+    
 }
