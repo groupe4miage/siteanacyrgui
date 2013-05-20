@@ -140,8 +140,8 @@ h1{
     font-style: italic;
     border-radius: 10px;
     border: 1px dashed #ccc;
-    position: relative;
-    margin-left: 0px;
+    position: absolute;
+    margin-left: 12.7%;
     z-index: 9999;
 }
 
@@ -155,6 +155,11 @@ h1{
 .sous_categorie ul{
     padding-right: 30px;
     list-style: none;
+}
+
+.sous_categorie li a{
+    text-decoration:none;
+    color: black;
 }
 
 .map{
@@ -386,17 +391,41 @@ table tr:nth-child(2n+1){
 .tr{
     width: 100%;
     float: left;
-    margin-top: -150px;
-    margin-bottom: 150px;
+    margin-top: -3.7%;
+    margin-bottom: 5%;
 }
 
 .td{
-    border: 2px solid #BA55D3;
+    border: 2px solid #F3F3F3;
     float: left;
     height: 200px;
     margin-bottom: 10px;
     margin-left: 10px;
     width: 23%;
+}
+
+.produit{
+    height: 100%;
+}
+
+.produit_titre{
+    background-color: #BAA4C5;
+    height: 15%;
+}
+
+.produit_prix{
+    background-color: #F3F3F3;
+    height: 15%;
+    margin-top: 4%;
+}
+
+.produit_ecriture{
+    font-family: Cambria;
+    font-size: 20px;
+}
+
+.erreur_produit{
+    color:#BAA4C5;
 }
 
 .livreor{ 
@@ -453,10 +482,6 @@ table tr:nth-child(2n+1){
 .boutonbulle{
     float: right;  
     width : 400px;
-}
-
-.test{
-
 }
 
 .imageconseil{ 

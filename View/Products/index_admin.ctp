@@ -1,6 +1,10 @@
 <div class="table">
-
-    <?php for ($cpt = 0; $cpt < sizeof($data); $cpt++) { ?>
+     <?php 
+        if (sizeof($data) == 0){
+    ?>
+            <div class="erreur_produit produit_ecriture"><center>Il y a aucun produit de disponible dans cette catégorie.</center></div>
+   <?php }else{
+        for ($cpt = 0; $cpt < sizeof($data); $cpt++) { ?>
         <?php
         if ($cpt == 0) {
             echo '<div class="tr">';
@@ -15,33 +19,47 @@
         }
         ?>
         <div class="td">
-            <div class="affichagephoto">
-                <?php
-                if ($data[$cpt]['Product']['picture'] == '') {
-                    echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
-                } else {
-                    echo $this->Html->image($data[$cpt]['Product']['picture']);
-                    echo "<br> <br>";
-                }
-                ?>
-            </div>
-            <div class="affichagetexte">
-                <?php
-                echo $data[$cpt]['Product']['name'];
-                echo $data[$cpt]['Product']['unitprice'];
-                echo "€";
-                echo "    ";
-                echo $this->Form->postLink(
+            <div class="produit">
+                <div class="produit_titre produit_ecriture">
+                    <center>
+                        <?php echo $data[$cpt]['Product']['name'];?>
+                    </center>
+                </div>
+                <div class="produit_photo">
+                    <center>
+                        <?php if ($data[$cpt]['Product']['picture'] == '') {
+                                echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
+                            } else {
+                                echo $this->Html->image($data[$cpt]['Product']['picture']);
+                                echo "<br> <br>";
+                            }
+                        ?>
+                    </center>
+                </div>
+                <div class="produit_prix produit_ecriture">
+                    <center>
+                        <?php echo $data[$cpt]['Product']['unitprice'];echo "€";?>
+                        &nbsp;&nbsp;
+                        <?php echo $this->Form->postLink(
                         $this->Html->image('delete.png'), array('action' => 'delete', $data[$cpt]['Product']['id']), array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
-                ?>
+                        ?>
+                    </center>
+                </div>
             </div>
         </div>
-<?php } ?> 
-    <?php
-// Montre les numéros de page
-    echo $this->Paginator->numbers();
-//$this->Paginator->options(array('url' => $this->passedArgs));
-// Montre les liens précédent et suivant
-    echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
-    echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
-    ?>  
+   <?php } }?> 
+</div>
+ <div class="produit_ecriture">
+     <center>
+        <?php
+            if (sizeof($data) != 0){
+            // Montre les numéros de page
+            echo $this->Paginator->numbers();
+            // Montre les liens précédent et suivant
+            echo $this->Paginator->prev('  « Précédent ', null, null, array('class' => 'disabled'));
+            echo $this->Paginator->next(' Suivant »', null, null, array('class' => 'disabled'));
+            }
+        ?>
+     </center>
+ </div>
+</div>
