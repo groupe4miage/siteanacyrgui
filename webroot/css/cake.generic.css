@@ -58,7 +58,7 @@ body{
 }
 
 .centre {
-    min-height: 620px;
+    min-height: 700px;
     margin-left: 200px;
     position: relative;
  }
@@ -490,19 +490,23 @@ table tr:nth-child(2n+1){
     padding-left: 12%;
 }
 
-.accueil{
-    background-image:url(../img/);
-    background-repeat:no-repeat;
-    height: 150px;
-    margin-left: 15%;
+.accueil_titre{
+    border-bottom: 2px solid #ccc;
+    font-size: 30px;
+    height: 10%;
     margin-top: 2%;
+    font-style: italic; 
+    padding-left: 0%;
+    color: black;
+    font-weight: normal;
 }
 
 .accueil_texte{
     width: 70%;
     color:#A98DB6;
-    padding-top: 0%;
-    padding-left: 0%;
+    margin-top: 2%;
+    margin-bottom: -3%;
+    margin-left: 15%;
     font-weight:bold;
     font-size: 20px;
     font-family: cambria;
@@ -526,23 +530,34 @@ table tr:nth-child(2n+1){
     font-weight: bold;
 }
 
-.Title_conseil{
-    width:800px;
-    background-color:#B35A5A;
-    border-style: double;
-    text-align: center;
-    font-family: Georgia, Times, Serif;
-    font-weight: bold;   
-}
-
-.Body_conseil{   
-    text-align: center;
-    width:800px; 
-    border-style: double;
-    border-color: #A98DB6;
-    background-color:#EED4E9;   
-}
-
 .actualite{
     margin-left: 20%;
+}
+
+.conseil{
+    color : #A98DB6;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.conseil_titre_general{
+    font-size: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-left: 0%;
+    font-style: italic;
+    color: black;
+    font-weight: normal;
+}
+
+.conseil_titre{
+    margin-top: 1%;
+}
+
+.Body_conseil{
+    margin-top: 1%;
+}
+
+.conseil_lien{
+    float: right;
+    padding-right: 2%;
 }

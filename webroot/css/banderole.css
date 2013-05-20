@@ -1622,6 +1622,6 @@ input[type="submit"].btn.btn-mini {
 
 /*Positionnement dans la page d'accueil*/
 .banderole{
-    margin-top: 5%;
     width: 900px; 
+    height: 400px;
 }

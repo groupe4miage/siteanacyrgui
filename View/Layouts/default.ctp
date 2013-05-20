@@ -128,7 +128,7 @@
                                                         <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_admin')); ?></li>
                                                     <?php else: ?>
                                                         <li><?php echo $this->Html->link("Livre d'or", array('controller' => 'visitorsbooks/index_noninscrit')); ?></li>
-<?php endif; ?> 
+                                                    <?php endif; ?> 
                                                     <li><?php echo $this->Html->link("Contact", array('controller' => 'contact')); ?></li>
                                                 </ul>
                                             </div>
