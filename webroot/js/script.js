@@ -38,6 +38,11 @@ function resolution(){
         $('header').css({'height': '340px'});
         $('.ecriture').css({'font-size':'48px'});
         $('.menu_footer').css({'font-size':'36px'});
+    }else if(largeur==1366){
+        $('header').css({'height': '300px'});
+        $('.ecriture').css({'font-size':'50px'});
+        $('footer').css({'height': '280px'});
+        $('.menu_footer').css({'font-size':'36px'});
     }else if(largeur==1024){
         $('header').css({'height': '280px'});
         $('.ecriture').css({'font-size':'39px'});
