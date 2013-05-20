@@ -419,7 +419,7 @@ table tr:nth-child(2n+1){
     margin-top: 4%;
 }
 
-.produit_ecriture{
+.contenu_ecriture{
     font-family: Cambria;
     font-size: 20px;
 }
@@ -491,35 +491,28 @@ table tr:nth-child(2n+1){
 }
 
 .Des_conseil{
-margin-left:20%;
-font-family: Georgia, Times, Serif;
-font-weight: bold;
-
+    margin-left:20%;
+    font-family: Georgia, Times, Serif;
+    font-weight: bold;
 }
+
 .Title_conseil{
-   
-width:800px;
-background-color:#B35A5A;
-border-style: double;
-text-align: center;
-font-family: Georgia, Times, Serif;
-font-weight: bold;
-    
+    width:800px;
+    background-color:#B35A5A;
+    border-style: double;
+    text-align: center;
+    font-family: Georgia, Times, Serif;
+    font-weight: bold;   
 }
 
-.Body_conseil{
-   
-text-align: center;
-    width:800px;
-  
+.Body_conseil{   
+    text-align: center;
+    width:800px; 
     border-style: double;
     border-color: #A98DB6;
-    background-color:#EED4E9;
+    background-color:#EED4E9;   
+}
 
-
-
-
- 
-    
-    
+.actualite{
+    margin-left: 20%;
 }

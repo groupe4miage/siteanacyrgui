@@ -4,7 +4,7 @@ les informations des posts -->
     <?php 
         if (sizeof($data) == 0){
     ?>
-            <div class="erreur_produit produit_ecriture"><center>Il y a aucun produit de disponible dans cette catégorie.</center></div>
+            <div class="erreur_produit contenu_ecriture"><center>Il y a aucun produit de disponible dans cette catégorie.</center></div>
    <?php }else{
         for($cpt = 0;$cpt<sizeof($data);$cpt++){ ?>
           <?php
@@ -22,7 +22,7 @@ les informations des posts -->
             ?>
           <div class="td">
               <div class="produit">
-                  <div class="produit_titre produit_ecriture">
+                  <div class="produit_titre contenu_ecriture">
                       <center>
                           <?php echo $data[$cpt]['Product']['name'];?>
                       </center>
@@ -38,7 +38,7 @@ les informations des posts -->
                           ?>
                       </center>
                   </div>
-                  <div class="produit_prix produit_ecriture">
+                  <div class="produit_prix contenu_ecriture">
                       <center>
                           <?php echo $data[$cpt]['Product']['unitprice'];echo "€";?>
                       </center>
@@ -47,7 +47,7 @@ les informations des posts -->
           </div>
     <?php } }?> 
  </div>
- <div class="produit_ecriture">
+ <div class="contenu_ecriture">
      <center>
         <?php
              if (sizeof($data) != 0){
