@@ -29,6 +29,7 @@
                     <center>
                         <?php if ($data[$cpt]['Product']['picture'] == '') {
                                 echo $this->Html->image('noPhoto.png', array('alt' => 'noPhoto'));
+                                echo "<br> <br>";
                             } else {
                                 echo $this->Html->image($data[$cpt]['Product']['picture']);
                                 echo "<br> <br>";
