@@ -25,17 +25,19 @@
                 <?php
                 if (AuthComponent::user('id') && AuthComponent::user('flag') == 0):
                     ?>
+                    <li><?php echo $this->Html->link("Accueil",array('controller'=>'pages/home')); ?></li>
                     <li><?php echo $this->Html->link("Se deconnecter", array('action' => 'logout', 'controller' => 'users')); ?></li>
                     <li><?php echo $this->Html->link("Mon compte", array('action' => 'edit', 'controller' => 'users')); ?></li>
                 <?php elseif (AuthComponent::user('id') && AuthComponent::user('flag') == 1): ?>
+                    <li><?php echo $this->Html->link("Accueil",array('controller'=>'pages/home')); ?></li>
                     <li><?php echo $this->Html->link("Se deconnecter", array('action' => 'logout', 'controller' => 'users')); ?></li>
                     <li><?php echo $this->Html->link("Ajouter un produit", array('action' => 'add_article', 'controller' => 'products')); ?></li>
-                    <li><?php echo $this->Html->link("Créer newsletter", array('action' => 'newsletter', 'controller' => 'users')); ?></li>
+                    <li><?php echo $this->Html->link("Créer newsletter", array('action' => 'newsletter', 'controller' => 'users')); ?></li>   
                 <?php else: ?>
+                    <li><?php echo $this->Html->link("Accueil",array('controller'=>'pages/home')); ?></li>
                     <li><?php echo $this->Html->link("Se connecter", array('action' => 'login', 'controller' => 'users')); ?></li>
                     <li><?php echo $this->Html->link("S'inscrire", array('action' => 'signup', 'controller' => 'users')); ?></li>
                 <?php endif; ?> 
-
             </ul>
         </div>
 

@@ -3,10 +3,10 @@
 <div class="banderole">
     <div class="container">
         <div id="slides">
-            <img src="img/banderole/photo1.jpg" alt="Image 1 introuvable">
-            <img src="img/banderole/photo2.jpg" alt="Image 2 introuvable">
-            <img src="img/banderole/photo3.jpg" alt="Image 3 introuvable">
-            <img src="img/banderole/photo4.jpg" alt="Image 4 introuvable">
+            <img src="../img/banderole/photo1.jpg" alt="Image 1 introuvable">
+            <img src="../img/banderole/photo2.jpg" alt="Image 2 introuvable">
+            <img src="../img/banderole/photo3.jpg" alt="Image 3 introuvable">
+            <img src="../img/banderole/photo4.jpg" alt="Image 4 introuvable">
         </div>
     </div>
 </div>

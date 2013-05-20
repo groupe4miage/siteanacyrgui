@@ -428,7 +428,7 @@ table tr:nth-child(2n+1){
 .td{
     border: 2px solid #F3F3F3;
     float: left;
-    height: 200px;
+    height: 100%;
     margin-bottom: 10px;
     margin-left: 10px;
     width: 23%;
@@ -443,10 +443,13 @@ table tr:nth-child(2n+1){
     height: 15%;
 }
 
+.produit_photo{
+    margin-top:5%;
+}
+
 .produit_prix{
     background-color: #F3F3F3;
     height: 15%;
-    margin-top: 4%;
 }
 
 .contenu_ecriture{
