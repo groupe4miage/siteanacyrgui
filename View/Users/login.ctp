@@ -1,7 +1,7 @@
 <h1 class="blogconseil">Se connecter</h1>
 <div class="connexion">
 <?php echo $this->Form->create('User'); ?>
-<?php echo $this->Form->input('username' ,array('label'=>"Login: ")); ?>
+<?php echo $this->Form->input('username' ,array('label'=>"Identifiant: ")); ?>
     </br>
 <?php echo $this->Form->input('password' ,array('label'=>"Mot de passe: ")); ?>
     </br>
