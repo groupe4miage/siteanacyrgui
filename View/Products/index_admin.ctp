@@ -41,7 +41,7 @@
                         <?php echo $data[$cpt]['Product']['unitprice'];echo "€";?>
                         &nbsp;&nbsp;
                         <?php echo $this->Form->postLink(
-                        $this->Html->image('delete.png'), array('action' => 'delete', $data[$cpt]['Product']['id']), array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
+                        $this->Html->image('delete.png'), array('action' => 'delete', $data[$cpt]['Product']['id'],$data[$cpt]['Product']['category_id'],$data[$cpt]['Product']['sub_category_id']), array('escape' => false, 'confirm' => 'Etes-vous sûr ?'));
                         ?>
                     </center>
                 </div>
