@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Edition d\'une actualité'); ?>
 <div class="connexion ajoutArticle">
     <h1 class="blogconseil">Editer le post</h1>
        <?php echo $this->Form->create('Post', array('action' => 'edit')); ?>

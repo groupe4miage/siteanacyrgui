@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Les produits'); ?>
 <div class="table">
      <?php 
         if (sizeof($data) == 0){

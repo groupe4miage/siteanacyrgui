@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Connexion'); ?>
 <h1 class="blogconseil">Se connecter</h1>
 <div class="connexion">
 <?php echo $this->Form->create('User'); ?>

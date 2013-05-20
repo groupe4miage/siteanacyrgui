@@ -34,7 +34,7 @@ Class UsersController extends AppController {
         if($this->request->is('post')){
            if($this->Auth->login()){
                 $this->Session->setFlash("Vous etes connecté","notif");
-                $this->redirect('/');
+                $this->redirect('/pages/home');
             }else{
                 $this->Session->setFlash("Identifiants incorrects","notif",array('type'=>'error'));
 

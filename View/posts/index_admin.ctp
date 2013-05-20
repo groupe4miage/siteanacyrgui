@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Gestion des actualités'); ?>
 <div class="actualite">
     <div class="blogconseil imageconseil">&nbsp;Laissez-vous guider par Claudine ...</div>
     <br>

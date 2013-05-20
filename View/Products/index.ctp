@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Les produits'); ?>
 <!-- C'est ici que nous bouclons sur le tableau $posts afin d'afficher
 les informations des posts -->
 <div class="table">

@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Edition du profil'); ?>
 <h1 class="profil">Edition</h1>
 
 <div class="connexion">

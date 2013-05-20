@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Rappel mot de passe'); ?>
 <h1 class="profil">Mot de passe oublié: </h1>
 <?php $this->set('title_for_layout',"Mot de passe oublié"); ?>
 <div class="connexion">

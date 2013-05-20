@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Ajouter une actualité'); ?>
 <h1 class="blogconseil imageconseil">&nbsp Ajouter une actualité</h1>
     <div class="connexion">
 <?php

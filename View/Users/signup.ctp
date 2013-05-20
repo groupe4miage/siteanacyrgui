@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Inscription'); ?>
 <h1 class="blogconseil">Inscription</h1>
 
 <div class="connexion">

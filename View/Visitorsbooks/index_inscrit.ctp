@@ -1,3 +1,4 @@
+<?php $this->set('title_for_layout', 'Livre d\'or'); ?>
 <div  class ="titrelivre ">
     Vous souhaitez donner votre avis sur la boutique de Claudine ? Connectez-vous !
 </div>
