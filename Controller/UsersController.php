@@ -44,7 +44,7 @@ Class UsersController extends AppController {
 
     function logout(){ 
         $this->Auth->logout();
-        $this->redirect($this->referer());
+        $this->redirect($this->referer('/pages/home'));
     }
 
     function password(){
